@@ -1,0 +1,3571 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-04-01 15:12:59) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 64ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "brands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401182237')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("brands")[0m
+
+
+Processing BrandsController#index (for 127.0.0.1 at 2010-04-01 15:24:17) [GET]
+  [4;35;1mBrand Load (0.3ms)[0m   [0mSELECT * FROM "brands" [0m
+Rendering template within layouts/application
+Rendering brands/index
+Completed in 55ms (View: 51, DB: 0) | 200 OK [http://0.0.0.0/brands]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:24:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#new (for 127.0.0.1 at 2010-04-01 15:24:18) [GET]
+Rendering template within layouts/application
+Rendering brands/new
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0x10445b668>) on line #1 of app/views/brands/_form.html.erb:
+1: <% semantic_form_for @brand do |f| %>
+2: 	<%= f.inputs %>
+3: 	<%= f.buttons %>
+4: <% end %>
+
+    app/views/brands/_form.html.erb:1
+    app/views/brands/new.html.erb:3
+
+Rendered rescues/_trace (51.6ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BrandsController#new (for 127.0.0.1 at 2010-04-01 15:24:52) [GET]
+Rendering template within layouts/application
+Rendering brands/new
+Rendered brands/_form (17.8ms)
+Completed in 94ms (View: 89, DB: 0) | 200 OK [http://0.0.0.0/brands/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:24:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#create (for 127.0.0.1 at 2010-04-01 15:25:06) [POST]
+  Parameters: {"brand"=>{"name"=>"A"}, "commit"=>"Create Brand", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0="}
+  [4;36;1mBrand Create (0.4ms)[0m   [0;1mINSERT INTO "brands" ("name", "created_at", "updated_at") VALUES('A', '2010-04-01 18:25:06', '2010-04-01 18:25:06')[0m
+Redirected to http://0.0.0.0:3000/brands/1
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/brands]
+
+
+Processing BrandsController#show (for 127.0.0.1 at 2010-04-01 15:25:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBrand Load (0.2ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering brands/show
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/brands/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:25:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#index (for 127.0.0.1 at 2010-04-01 15:25:08) [GET]
+  [4;36;1mBrand Load (0.4ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendering template within layouts/application
+Rendering brands/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/brands]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:25:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#new (for 127.0.0.1 at 2010-04-01 15:25:09) [GET]
+Rendering template within layouts/application
+Rendering brands/new
+Rendered brands/_form (5.8ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/brands/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:25:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#create (for 127.0.0.1 at 2010-04-01 15:25:11) [POST]
+  Parameters: {"brand"=>{"name"=>"B"}, "commit"=>"Create Brand", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0="}
+  [4;35;1mBrand Create (0.4ms)[0m   [0mINSERT INTO "brands" ("name", "created_at", "updated_at") VALUES('B', '2010-04-01 18:25:11', '2010-04-01 18:25:11')[0m
+Redirected to http://0.0.0.0:3000/brands/2
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/brands]
+
+
+Processing BrandsController#show (for 127.0.0.1 at 2010-04-01 15:25:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBrand Load (0.2ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering brands/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/brands/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:25:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#index (for 127.0.0.1 at 2010-04-01 15:25:13) [GET]
+  [4;35;1mBrand Load (0.5ms)[0m   [0mSELECT * FROM "brands" [0m
+Rendering template within layouts/application
+Rendering brands/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/brands]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:25:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#new (for 127.0.0.1 at 2010-04-01 15:25:14) [GET]
+Rendering template within layouts/application
+Rendering brands/new
+Rendered brands/_form (5.4ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/brands/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:25:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#create (for 127.0.0.1 at 2010-04-01 15:25:16) [POST]
+  Parameters: {"brand"=>{"name"=>"C"}, "commit"=>"Create Brand", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0="}
+  [4;36;1mBrand Create (0.4ms)[0m   [0;1mINSERT INTO "brands" ("name", "created_at", "updated_at") VALUES('C', '2010-04-01 18:25:16', '2010-04-01 18:25:16')[0m
+Redirected to http://0.0.0.0:3000/brands/3
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/brands]
+
+
+Processing BrandsController#show (for 127.0.0.1 at 2010-04-01 15:25:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBrand Load (0.2ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering brands/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/brands/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:25:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#index (for 127.0.0.1 at 2010-04-01 15:25:17) [GET]
+  [4;36;1mBrand Load (0.6ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendering template within layouts/application
+Rendering brands/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/brands]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:25:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#index (for 127.0.0.1 at 2010-04-01 15:30:04) [GET]
+  [4;35;1mBrand Load (0.6ms)[0m   [0mSELECT * FROM "brands" [0m
+Rendering template within layouts/application
+Rendering brands/index
+Completed in 425ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/brands]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:30:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-01 15:30:11) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: products: SELECT * FROM "products" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: products: SELECT * FROM "products" ):
+  app/controllers/products_controller.rb:3:in `index'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brand_id" integer, "bought_price" float, "sale_price" float, "stock_ammount" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100401182907')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-01 15:30:26) [GET]
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/application
+Rendering products/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:30:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-04-01 15:30:28) [GET]
+Rendering template within layouts/application
+Rendering products/new
+  [4;36;1mBrand Load (0.5ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendered products/_form (79.2ms)
+Completed in 93ms (View: 88, DB: 0) | 200 OK [http://0.0.0.0/products/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:30:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-04-01 15:31:31) [POST]
+  Parameters: {"commit"=>"Create Product", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "product"=>{"name"=>"Xampu", "bought_price"=>"10", "stock_ammount"=>"10", "sale_price"=>"12.5", "brand_id"=>"1"}}
+  [4;35;1mProduct Create (0.5ms)[0m   [0mINSERT INTO "products" ("name", "bought_price", "created_at", "updated_at", "stock_ammount", "brand_id", "sale_price") VALUES('Xampu', 10.0, '2010-04-01 18:31:31', '2010-04-01 18:31:31', 10, 1, 12.5)[0m
+Redirected to http://0.0.0.0:3000/products/1
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-04-01 15:31:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering products/show
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/products/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:31:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-01 15:31:32) [GET]
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/application
+Rendering products/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:31:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-04-01 15:31:34) [GET]
+Rendering template within layouts/application
+Rendering products/new
+  [4;36;1mBrand Load (0.4ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendered products/_form (79.2ms)
+Completed in 86ms (View: 81, DB: 0) | 200 OK [http://0.0.0.0/products/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:31:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-04-01 15:31:58) [POST]
+  Parameters: {"commit"=>"Create Product", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "product"=>{"name"=>"Sabonete Líquido", "bought_price"=>"7,50", "stock_ammount"=>"5", "sale_price"=>"10", "brand_id"=>"2"}}
+  [4;35;1mProduct Create (0.5ms)[0m   [0mINSERT INTO "products" ("name", "bought_price", "created_at", "updated_at", "stock_ammount", "brand_id", "sale_price") VALUES('Sabonete Líquido', 7.0, '2010-04-01 18:31:58', '2010-04-01 18:31:58', 5, 2, 10.0)[0m
+Redirected to http://0.0.0.0:3000/products/2
+Completed in 9ms (DB: 1) | 302 Found [http://0.0.0.0/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-04-01 15:31:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering products/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/products/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:31:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-01 15:32:04) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/application
+Rendering products/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:32:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "telephone" integer, "address" text, "email" varchar(255), "rg" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100401183358')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-04-01 15:34:39) [GET]
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/clients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:34:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#new (for 127.0.0.1 at 2010-04-01 15:34:40) [GET]
+Rendering template within layouts/application
+Rendering clients/new
+Rendered clients/_form (9.7ms)
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/clients/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:34:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#create (for 127.0.0.1 at 2010-04-01 15:35:03) [POST]
+  Parameters: {"commit"=>"Create Client", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "client"=>{"address"=>"Algum Lugar", "name"=>"João", "telephone"=>"5551234", "rg"=>"12344566", "email"=>"joao@joao.com"}}
+  [4;35;1mClient Create (0.4ms)[0m   [0mINSERT INTO "clients" ("name", "address", "created_at", "updated_at", "telephone", "email", "rg") VALUES('João', 'Algum Lugar', '2010-04-01 18:35:03', '2010-04-01 18:35:03', 5551234, 'joao@joao.com', 12344566)[0m
+Redirected to http://0.0.0.0:3000/clients/1
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/clients]
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-04-01 15:35:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/show
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/clients/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:35:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-04-01 15:35:07) [GET]
+  [4;35;1mClient Load (0.6ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/clients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:35:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#new (for 127.0.0.1 at 2010-04-01 15:35:09) [GET]
+Rendering template within layouts/application
+Rendering clients/new
+Rendered clients/_form (9.2ms)
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/clients/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:35:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#create (for 127.0.0.1 at 2010-04-01 15:35:26) [POST]
+  Parameters: {"commit"=>"Create Client", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "client"=>{"address"=>"Sei lá eu.", "name"=>"Maria", "telephone"=>"342534663", "rg"=>"234567898765", "email"=>"maria@maria.com"}}
+  [4;36;1mClient Create (0.4ms)[0m   [0;1mINSERT INTO "clients" ("name", "address", "created_at", "updated_at", "telephone", "email", "rg") VALUES('Maria', 'Sei lá eu.', '2010-04-01 18:35:26', '2010-04-01 18:35:26', 342534663, 'maria@maria.com', 234567898765)[0m
+Redirected to http://0.0.0.0:3000/clients/2
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/clients]
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-04-01 15:35:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering clients/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/clients/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:35:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-04-01 15:35:28) [GET]
+  [4;36;1mClient Load (0.6ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/clients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "client_id" integer, "date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100401184754')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sales")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "sale_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sale_id" integer, "product_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100401184839')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sale_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sales")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sale_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sales")[0m
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-04-01 15:52:41) [GET]
+  [4;35;1mClient Load (0.6ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/clients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:52:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 15:52:45) [GET]
+  [4;36;1mSale Load (0.4ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 95ms (View: 70, DB: 0) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:52:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 15:52:46) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendered sales/_form (15.8ms)
+Completed in 30ms (View: 24, DB: 0) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:52:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 15:54:10) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+Rendered sales/_form (110.3ms)
+Completed in 122ms (View: 115, DB: 1) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:54:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 15:55:27) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+Rendered sales/_form (30.6ms)
+Completed in 41ms (View: 34, DB: 1) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:55:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#create (for 127.0.0.1 at 2010-04-01 15:55:46) [POST]
+  Parameters: {"commit"=>"Create Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "sale"=>{"product_ids"=>["1", "2"], "date(1i)"=>"2006", "date(2i)"=>"5", "date(3i)"=>"1", "client_id"=>"1"}}
+WARNING: Can't mass-assign these protected attributes: product_ids
+  [4;36;1mSale Create (0.4ms)[0m   [0;1mINSERT INTO "sales" ("created_at", "updated_at", "date", "client_id") VALUES('2010-04-01 18:55:46', '2010-04-01 18:55:46', '2006-05-01', 1)[0m
+Redirected to http://0.0.0.0:3000/sales/1
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/sales]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 15:55:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/sales/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:55:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 15:55:49) [GET]
+  [4;36;1mSale Load (0.5ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:55:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 15:55:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+Rendered sales/_form (29.4ms)
+Completed in 41ms (View: 34, DB: 1) | 200 OK [http://0.0.0.0/sales/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:55:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#update (for 127.0.0.1 at 2010-04-01 15:55:57) [PUT]
+  Parameters: {"commit"=>"Update Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "id"=>"1", "sale"=>{"product_ids"=>["1", "2"], "date(1i)"=>"2006", "date(2i)"=>"5", "date(3i)"=>"1", "client_id"=>"1"}}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+WARNING: Can't mass-assign these protected attributes: product_ids
+Redirected to http://0.0.0.0:3000/sales/1
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/sales/1]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 15:55:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 73ms (View: 66, DB: 0) | 200 OK [http://0.0.0.0/sales/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:55:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 15:56:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+Rendered sales/_form (29.3ms)
+Completed in 38ms (View: 30, DB: 1) | 200 OK [http://0.0.0.0/sales/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:56:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#update (for 127.0.0.1 at 2010-04-01 15:56:05) [PUT]
+  Parameters: {"commit"=>"Update Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "id"=>"1", "sale"=>{"product_ids"=>["2"], "date(1i)"=>"2006", "date(2i)"=>"5", "date(3i)"=>"1", "client_id"=>"1"}}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+WARNING: Can't mass-assign these protected attributes: product_ids
+Redirected to http://0.0.0.0:3000/sales/1
+Completed in 71ms (DB: 0) | 302 Found [http://0.0.0.0/sales/1]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 15:56:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/sales/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:56:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 15:56:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+Rendered sales/_form (31.0ms)
+Completed in 40ms (View: 32, DB: 1) | 200 OK [http://0.0.0.0/sales/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:56:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 15:56:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+Rendered sales/_form (31.9ms)
+Completed in 44ms (View: 36, DB: 1) | 200 OK [http://0.0.0.0/sales/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:56:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#update (for 127.0.0.1 at 2010-04-01 15:56:31) [PUT]
+  Parameters: {"commit"=>"Update Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "id"=>"1", "sale"=>{"product_ids"=>["", "1", ""], "date(1i)"=>"2006", "date(2i)"=>"5", "date(3i)"=>"1", "client_id"=>"1"}}
+  [4;36;1mSale Load (0.5ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+WARNING: Can't mass-assign these protected attributes: product_ids
+Redirected to http://0.0.0.0:3000/sales/1
+Completed in 10ms (DB: 1) | 302 Found [http://0.0.0.0/sales/1]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 15:56:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/sales/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:56:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 15:56:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+Rendered sales/_form (30.4ms)
+Completed in 39ms (View: 32, DB: 1) | 200 OK [http://0.0.0.0/sales/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:56:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 15:57:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+Rendered sales/_form (32.4ms)
+Completed in 41ms (View: 34, DB: 1) | 200 OK [http://0.0.0.0/sales/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:57:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#update (for 127.0.0.1 at 2010-04-01 15:57:46) [PUT]
+  Parameters: {"commit"=>"Update Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "id"=>"1", "sale"=>{"product_ids"=>["", "1", ""], "date(1i)"=>"2006", "date(2i)"=>"5", "date(3i)"=>"1", "client_id"=>"1"}}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+  [4;35;1mSaleOrder Create (0.4ms)[0m   [0mINSERT INTO "sale_orders" ("sale_id", "created_at", "product_id", "updated_at") VALUES(1, '2010-04-01 18:57:46', 1, '2010-04-01 18:57:46')[0m
+Redirected to http://0.0.0.0:3000/sales/1
+Completed in 23ms (DB: 1) | 302 Found [http://0.0.0.0/sales/1]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 15:57:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/sales/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:57:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 15:57:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+Rendered sales/_form (31.2ms)
+Completed in 40ms (View: 32, DB: 1) | 200 OK [http://0.0.0.0/sales/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:57:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#update (for 127.0.0.1 at 2010-04-01 15:57:50) [PUT]
+  Parameters: {"commit"=>"Update Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "id"=>"1", "sale"=>{"product_ids"=>["", "1", "", "2"], "date(1i)"=>"2006", "date(2i)"=>"5", "date(3i)"=>"1", "client_id"=>"1"}}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" IN (1,2)) [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+  [4;35;1mSaleOrder Create (0.4ms)[0m   [0mINSERT INTO "sale_orders" ("sale_id", "created_at", "product_id", "updated_at") VALUES(1, '2010-04-01 18:57:50', 2, '2010-04-01 18:57:50')[0m
+Redirected to http://0.0.0.0:3000/sales/1
+Completed in 24ms (DB: 1) | 302 Found [http://0.0.0.0/sales/1]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 15:57:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/sales/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:57:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 15:57:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+Rendered sales/_form (90.5ms)
+Completed in 99ms (View: 91, DB: 1) | 200 OK [http://0.0.0.0/sales/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:57:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 15:57:53) [GET]
+  [4;36;1mSale Load (0.9ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:57:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 15:57:54) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+Rendered sales/_form (93.9ms)
+Completed in 101ms (View: 94, DB: 1) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:57:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#create (for 127.0.0.1 at 2010-04-01 15:57:58) [POST]
+  Parameters: {"commit"=>"Create Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "sale"=>{"product_ids"=>["", "1", ""], "date(1i)"=>"2010", "date(2i)"=>"4", "date(3i)"=>"1", "client_id"=>"2"}}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mSale Create (0.4ms)[0m   [0;1mINSERT INTO "sales" ("created_at", "updated_at", "date", "client_id") VALUES('2010-04-01 18:57:58', '2010-04-01 18:57:58', '2010-04-01', 2)[0m
+  [4;35;1mSaleOrder Create (0.2ms)[0m   [0mINSERT INTO "sale_orders" ("sale_id", "created_at", "product_id", "updated_at") VALUES(2, '2010-04-01 18:57:58', 1, '2010-04-01 18:57:58')[0m
+Redirected to http://0.0.0.0:3000/sales/2
+Completed in 23ms (DB: 1) | 302 Found [http://0.0.0.0/sales]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 15:57:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/sales/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 15:57:59) [GET]
+  [4;35;1mSale Load (0.6ms)[0m   [0mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:57:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 15:58:01) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+Rendered sales/_form (30.0ms)
+Completed in 37ms (View: 31, DB: 1) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:58:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#create (for 127.0.0.1 at 2010-04-01 15:58:05) [POST]
+  Parameters: {"commit"=>"Create Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "sale"=>{"product_ids"=>["", "", "2"], "date(1i)"=>"2010", "date(2i)"=>"4", "date(3i)"=>"1", "client_id"=>"1"}}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mSale Create (0.4ms)[0m   [0mINSERT INTO "sales" ("created_at", "updated_at", "date", "client_id") VALUES('2010-04-01 18:58:05', '2010-04-01 18:58:05', '2010-04-01', 1)[0m
+  [4;36;1mSaleOrder Create (0.2ms)[0m   [0;1mINSERT INTO "sale_orders" ("sale_id", "created_at", "product_id", "updated_at") VALUES(3, '2010-04-01 18:58:05', 2, '2010-04-01 18:58:05')[0m
+Redirected to http://0.0.0.0:3000/sales/3
+Completed in 24ms (DB: 1) | 302 Found [http://0.0.0.0/sales]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 15:58:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/sales/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:58:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 15:58:07) [GET]
+  [4;36;1mSale Load (0.7ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:58:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 15:58:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 2)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 2)) [0m
+Rendered sales/_form (30.7ms)
+Completed in 101ms (View: 32, DB: 1) | 200 OK [http://0.0.0.0/sales/2/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:58:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 15:58:15) [GET]
+  [4;36;1mSale Load (0.7ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 15:58:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100401185943')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sale_orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sales")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sale_orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sales")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "purchase_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "purchase_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100401190053')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchase_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sale_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sales")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchase_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sale_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sales")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchase_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sale_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sales")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchase_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sale_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sales")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:11:15) [GET]
+
+NameError (uninitialized constant PurchasesController):
+  
+
+Rendered rescues/_trace (28.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:13:03) [GET]
+
+NameError (uninitialized constant PurchasesController):
+  
+
+Rendered rescues/_trace (28.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:14:49) [GET]
+
+NameError (uninitialized constant PurchasesController):
+  
+
+Rendered rescues/_trace (29.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:15:01) [GET]
+
+NameError (uninitialized constant PurchasesController):
+  
+
+Rendered rescues/_trace (30.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:16:54) [GET]
+
+NameError (uninitialized constant PurchasesController):
+  
+
+Rendered rescues/_trace (30.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 16:17:03) [GET]
+  [4;36;1mSale Load (0.8ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 111ms (View: 32, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:17:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:17:06) [GET]
+
+NameError (uninitialized constant PurchasesController):
+  
+
+Rendered rescues/_trace (28.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:17:26) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchase_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sale_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sales")[0m
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:17:48) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (116.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:17:51) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/purchases/_form.html.erb:
+1: <% semantic_form_for @purchase do |f| %>
+2:   <% f.inputs do %>
+3:      <%= f.input :date %>
+4:      <%= f.input :products, :as => :check_boxes %>
+
+    formtastic (0.9.7) rails/./lib/formtastic.rb:1650:in `semantic_form_for'
+    formtastic (0.9.7) rails/./lib/formtastic.rb:1609:in `with_custom_field_error_proc'
+    formtastic (0.9.7) rails/./lib/formtastic.rb:1649:in `semantic_form_for'
+    app/views/purchases/_form.html.erb:1
+    app/views/purchases/new.html.erb:3
+
+Rendered rescues/_trace (53.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:23:18) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:23:19) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (113.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchase_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sale_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sales")[0m
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:25:09) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (40.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:25:10) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (109.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:25:11) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (50.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:25:11) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (40.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:25:11) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (124.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:25:11) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (45.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:25:11) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (110.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:25:12) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchase_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sale_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sales")[0m
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:27:56) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:27:57) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:27:57) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (55.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:27:57) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (116.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:27:58) [GET]
+Rendering template within layouts/application
+Rendering purchases/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #7 of app/views/purchases/index.html.erb:
+4:   <tr>
+5:     <th>Date</th>
+6:   </tr>
+7:   <% for purchase in @purchases %>
+8:     <tr>
+9:       <td><%=h purchase.date %></td>
+10:       <td><%= link_to "Show", purchase %></td>
+
+    app/views/purchases/index.html.erb:7
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:28:16) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/purchases/_form.html.erb:
+1: <% semantic_form_for @purchase do |f| %>
+2:   <% f.inputs do %>
+3:      <%= f.input :date %>
+4:      <%= f.input :products, :as => :check_boxes %>
+
+    formtastic (0.9.7) rails/./lib/formtastic.rb:1650:in `semantic_form_for'
+    formtastic (0.9.7) rails/./lib/formtastic.rb:1609:in `with_custom_field_error_proc'
+    formtastic (0.9.7) rails/./lib/formtastic.rb:1649:in `semantic_form_for'
+    app/views/purchases/_form.html.erb:1
+    app/views/purchases/new.html.erb:3
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:29:07) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (85.4ms)
+Completed in 93ms (View: 86, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:29:11) [GET]
+  [4;36;1mPurchase Load (0.5ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/purchases/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:29:13) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (84.1ms)
+Completed in 91ms (View: 85, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mDROP TABLE "purchase_orders"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100401190053'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sale_orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sales")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "purchase_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "purchase_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("brands")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("clients")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchase_orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sale_orders")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sales")[0m
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:29:41) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (22.4ms)
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:29:42) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (22.6ms)
+Completed in 102ms (View: 24, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:29:42) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (79.4ms)
+Completed in 90ms (View: 80, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:29:43) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (22.3ms)
+Completed in 29ms (View: 23, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:29:53) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (23.4ms)
+Completed in 32ms (View: 25, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:29:55) [GET]
+  [4;35;1mPurchase Load (0.5ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/purchases/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:29:56) [GET]
+  [4;36;1mPurchase Load (0.5ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/purchases/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:29:57) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (24.7ms)
+Completed in 33ms (View: 26, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:29:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "brands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401182237')[0m
+Migrating to CreateProducts (20100401182907)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brand_id" integer, "bought_price" float, "sale_price" float, "stock_ammount" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401182907')[0m
+Migrating to CreateClients (20100401183358)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "telephone" integer, "address" text, "email" varchar(255), "rg" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401183358')[0m
+Migrating to CreateSales (20100401184754)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "client_id" integer, "date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401184754')[0m
+Migrating to CreateSaleOrders (20100401184839)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "sale_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sale_id" integer, "product_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401184839')[0m
+Migrating to CreatePurchases (20100401185943)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401185943')[0m
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "purchase_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "purchase_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("brands")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("clients")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("purchase_orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sale_orders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sales")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateClients (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("brands")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("purchase_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("purchases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sale_orders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sales")[0m
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:30:44) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendered purchases/_form (20.3ms)
+Completed in 28ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:30:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 16:30:53) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendered sales/_form (84.5ms)
+Completed in 98ms (View: 92, DB: 0) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:30:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#index (for 127.0.0.1 at 2010-04-01 16:31:02) [GET]
+  [4;35;1mBrand Load (0.5ms)[0m   [0mSELECT * FROM "brands" [0m
+Rendering template within layouts/application
+Rendering brands/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/brands]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-01 16:31:03) [GET]
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/application
+Rendering products/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-04-01 16:31:05) [GET]
+  [4;35;1mClient Load (0.5ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/clients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#new (for 127.0.0.1 at 2010-04-01 16:31:08) [GET]
+Rendering template within layouts/application
+Rendering brands/new
+Rendered brands/_form (5.9ms)
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/brands/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#create (for 127.0.0.1 at 2010-04-01 16:31:10) [POST]
+  Parameters: {"brand"=>{"name"=>"A"}, "commit"=>"Create Brand", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0="}
+  [4;36;1mBrand Create (0.4ms)[0m   [0;1mINSERT INTO "brands" ("name", "created_at", "updated_at") VALUES('A', '2010-04-01 19:31:10', '2010-04-01 19:31:10')[0m
+Redirected to http://0.0.0.0:3000/brands/1
+Completed in 71ms (DB: 0) | 302 Found [http://0.0.0.0/brands]
+
+
+Processing BrandsController#show (for 127.0.0.1 at 2010-04-01 16:31:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mBrand Load (0.2ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering brands/show
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/brands/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#index (for 127.0.0.1 at 2010-04-01 16:31:12) [GET]
+  [4;36;1mBrand Load (0.5ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendering template within layouts/application
+Rendering brands/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/brands]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#new (for 127.0.0.1 at 2010-04-01 16:31:13) [GET]
+Rendering template within layouts/application
+Rendering brands/new
+Rendered brands/_form (5.8ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/brands/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#create (for 127.0.0.1 at 2010-04-01 16:31:16) [POST]
+  Parameters: {"brand"=>{"name"=>"B"}, "commit"=>"Create Brand", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0="}
+  [4;35;1mBrand Create (0.4ms)[0m   [0mINSERT INTO "brands" ("name", "created_at", "updated_at") VALUES('B', '2010-04-01 19:31:16', '2010-04-01 19:31:16')[0m
+Redirected to http://0.0.0.0:3000/brands/2
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/brands]
+
+
+Processing BrandsController#show (for 127.0.0.1 at 2010-04-01 16:31:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBrand Load (0.2ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering brands/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/brands/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#index (for 127.0.0.1 at 2010-04-01 16:31:17) [GET]
+  [4;35;1mBrand Load (0.6ms)[0m   [0mSELECT * FROM "brands" [0m
+Rendering template within layouts/application
+Rendering brands/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/brands]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#new (for 127.0.0.1 at 2010-04-01 16:31:18) [GET]
+Rendering template within layouts/application
+Rendering brands/new
+Rendered brands/_form (5.5ms)
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/brands/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#create (for 127.0.0.1 at 2010-04-01 16:31:21) [POST]
+  Parameters: {"brand"=>{"name"=>"C"}, "commit"=>"Create Brand", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0="}
+  [4;36;1mBrand Create (0.3ms)[0m   [0;1mINSERT INTO "brands" ("name", "created_at", "updated_at") VALUES('C', '2010-04-01 19:31:21', '2010-04-01 19:31:21')[0m
+Redirected to http://0.0.0.0:3000/brands/3
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/brands]
+
+
+Processing BrandsController#show (for 127.0.0.1 at 2010-04-01 16:31:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mBrand Load (0.2ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering brands/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/brands/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#index (for 127.0.0.1 at 2010-04-01 16:31:22) [GET]
+  [4;36;1mBrand Load (0.6ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendering template within layouts/application
+Rendering brands/index
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/brands]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#new (for 127.0.0.1 at 2010-04-01 16:31:23) [GET]
+Rendering template within layouts/application
+Rendering brands/new
+Rendered brands/_form (68.2ms)
+Completed in 75ms (View: 71, DB: 0) | 200 OK [http://0.0.0.0/brands/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BrandsController#index (for 127.0.0.1 at 2010-04-01 16:31:24) [GET]
+  [4;35;1mBrand Load (0.6ms)[0m   [0mSELECT * FROM "brands" [0m
+Rendering template within layouts/application
+Rendering brands/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/brands]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-04-01 16:31:27) [GET]
+Rendering template within layouts/application
+Rendering products/new
+  [4;36;1mBrand Load (0.4ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendered products/_form (19.0ms)
+Completed in 34ms (View: 27, DB: 0) | 200 OK [http://0.0.0.0/products/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-04-01 16:31:40) [POST]
+  Parameters: {"commit"=>"Create Product", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "product"=>{"name"=>"Xampu", "bought_price"=>"10", "stock_ammount"=>"10", "sale_price"=>"12", "brand_id"=>"1"}}
+  [4;35;1mProduct Create (0.4ms)[0m   [0mINSERT INTO "products" ("name", "bought_price", "created_at", "updated_at", "stock_ammount", "brand_id", "sale_price") VALUES('Xampu', 10.0, '2010-04-01 19:31:40', '2010-04-01 19:31:40', 10, 1, 12.0)[0m
+Redirected to http://0.0.0.0:3000/products/1
+Completed in 12ms (DB: 0) | 302 Found [http://0.0.0.0/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-04-01 16:31:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering products/show
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/products/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-01 16:31:44) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/application
+Rendering products/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-04-01 16:31:46) [GET]
+Rendering template within layouts/application
+Rendering products/new
+  [4;36;1mBrand Load (0.4ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendered products/_form (14.7ms)
+Completed in 24ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/products/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-04-01 16:31:57) [POST]
+  Parameters: {"commit"=>"Create Product", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "product"=>{"name"=>"Sabonete Líquido", "bought_price"=>"8", "stock_ammount"=>"5", "sale_price"=>"10", "brand_id"=>"2"}}
+  [4;35;1mProduct Create (0.4ms)[0m   [0mINSERT INTO "products" ("name", "bought_price", "created_at", "updated_at", "stock_ammount", "brand_id", "sale_price") VALUES('Sabonete Líquido', 8.0, '2010-04-01 19:31:57', '2010-04-01 19:31:57', 5, 2, 10.0)[0m
+Redirected to http://0.0.0.0:3000/products/2
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-04-01 16:31:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering products/show
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/products/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-01 16:31:59) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/application
+Rendering products/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:31:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-04-01 16:32:02) [GET]
+Rendering template within layouts/application
+Rendering products/new
+  [4;36;1mBrand Load (0.4ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendered products/_form (14.4ms)
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/products/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-01 16:32:07) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/application
+Rendering products/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#new (for 127.0.0.1 at 2010-04-01 16:32:09) [GET]
+Rendering template within layouts/application
+Rendering clients/new
+Rendered clients/_form (9.4ms)
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/clients/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#create (for 127.0.0.1 at 2010-04-01 16:32:23) [POST]
+  Parameters: {"commit"=>"Create Client", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "client"=>{"address"=>"Sei Lá", "name"=>"João", "telephone"=>"21253", "rg"=>"25364", "email"=>"joao@joao.com"}}
+  [4;36;1mClient Create (0.4ms)[0m   [0;1mINSERT INTO "clients" ("name", "address", "created_at", "updated_at", "telephone", "email", "rg") VALUES('João', 'Sei Lá', '2010-04-01 19:32:23', '2010-04-01 19:32:23', 21253, 'joao@joao.com', 25364)[0m
+Redirected to http://0.0.0.0:3000/clients/1
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/clients]
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-04-01 16:32:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/show
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/clients/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-04-01 16:32:25) [GET]
+  [4;36;1mClient Load (0.6ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/clients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#new (for 127.0.0.1 at 2010-04-01 16:32:26) [GET]
+Rendering template within layouts/application
+Rendering clients/new
+Rendered clients/_form (9.2ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/clients/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#create (for 127.0.0.1 at 2010-04-01 16:32:41) [POST]
+  Parameters: {"commit"=>"Create Client", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "client"=>{"address"=>"Pff", "name"=>"Maria", "telephone"=>"123455", "rg"=>"20135250945", "email"=>"maria@maria.com"}}
+  [4;35;1mClient Create (0.4ms)[0m   [0mINSERT INTO "clients" ("name", "address", "created_at", "updated_at", "telephone", "email", "rg") VALUES('Maria', 'Pff', '2010-04-01 19:32:41', '2010-04-01 19:32:41', 123455, 'maria@maria.com', 20135250945)[0m
+Redirected to http://0.0.0.0:3000/clients/2
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/clients]
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-04-01 16:32:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering clients/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/clients/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-04-01 16:32:43) [GET]
+  [4;35;1mClient Load (0.7ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/clients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 16:32:46) [GET]
+  [4;36;1mSale Load (0.5ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 16:32:47) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+Rendered sales/_form (90.4ms)
+Completed in 99ms (View: 91, DB: 1) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#create (for 127.0.0.1 at 2010-04-01 16:32:52) [POST]
+  Parameters: {"commit"=>"Create Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "sale"=>{"product_ids"=>["", "1", ""], "date(1i)"=>"2010", "date(2i)"=>"4", "date(3i)"=>"1", "client_id"=>"1"}}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mSale Create (0.4ms)[0m   [0;1mINSERT INTO "sales" ("created_at", "updated_at", "date", "client_id") VALUES('2010-04-01 19:32:52', '2010-04-01 19:32:52', '2010-04-01', 1)[0m
+  [4;35;1mSaleOrder Create (0.2ms)[0m   [0mINSERT INTO "sale_orders" ("sale_id", "created_at", "product_id", "updated_at") VALUES(1, '2010-04-01 19:32:52', 1, '2010-04-01 19:32:52')[0m
+Redirected to http://0.0.0.0:3000/sales/1
+Completed in 24ms (DB: 1) | 302 Found [http://0.0.0.0/sales]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 16:32:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 80ms (View: 73, DB: 0) | 200 OK [http://0.0.0.0/sales/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 16:32:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+Rendered sales/_form (32.5ms)
+Completed in 44ms (View: 37, DB: 1) | 200 OK [http://0.0.0.0/sales/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 16:32:54) [GET]
+  [4;36;1mSale Load (0.6ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 16:32:55) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+Rendered sales/_form (31.0ms)
+Completed in 38ms (View: 32, DB: 1) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:32:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#create (for 127.0.0.1 at 2010-04-01 16:33:00) [POST]
+  Parameters: {"commit"=>"Create Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "sale"=>{"product_ids"=>["", "1", "", "2"], "date(1i)"=>"2010", "date(2i)"=>"4", "date(3i)"=>"1", "client_id"=>"1"}}
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" IN (1,2)) [0m
+  [4;36;1mSale Create (0.4ms)[0m   [0;1mINSERT INTO "sales" ("created_at", "updated_at", "date", "client_id") VALUES('2010-04-01 19:33:00', '2010-04-01 19:33:00', '2010-04-01', 1)[0m
+  [4;35;1mSaleOrder Create (0.2ms)[0m   [0mINSERT INTO "sale_orders" ("sale_id", "created_at", "product_id", "updated_at") VALUES(2, '2010-04-01 19:33:00', 1, '2010-04-01 19:33:00')[0m
+  [4;36;1mSaleOrder Create (0.1ms)[0m   [0;1mINSERT INTO "sale_orders" ("sale_id", "created_at", "product_id", "updated_at") VALUES(2, '2010-04-01 19:33:00', 2, '2010-04-01 19:33:00')[0m
+Redirected to http://0.0.0.0:3000/sales/2
+Completed in 26ms (DB: 1) | 302 Found [http://0.0.0.0/sales]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 16:33:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/sales/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 16:33:01) [GET]
+  [4;36;1mSale Load (0.6ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 76ms (View: 70, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 16:33:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 1)) [0m
+Rendered sales/_form (32.0ms)
+Completed in 40ms (View: 33, DB: 1) | 200 OK [http://0.0.0.0/sales/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 16:33:05) [GET]
+  [4;36;1mSale Load (0.6ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 16:33:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSale Load (0.2ms)[0m   [0mSELECT * FROM "sales" WHERE ("sales"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 2)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 2)) [0m
+Rendered sales/_form (32.3ms)
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://0.0.0.0/sales/2/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 16:33:07) [GET]
+  [4;36;1mSale Load (0.6ms)[0m   [0;1mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 16:33:08) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+Rendered sales/_form (89.1ms)
+Completed in 97ms (View: 90, DB: 1) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#create (for 127.0.0.1 at 2010-04-01 16:33:12) [POST]
+  Parameters: {"commit"=>"Create Sale", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "sale"=>{"product_ids"=>["", "1", ""], "date(1i)"=>"2010", "date(2i)"=>"4", "date(3i)"=>"1", "client_id"=>"2"}}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+  [4;36;1mSale Create (0.4ms)[0m   [0;1mINSERT INTO "sales" ("created_at", "updated_at", "date", "client_id") VALUES('2010-04-01 19:33:12', '2010-04-01 19:33:12', '2010-04-01', 2)[0m
+  [4;35;1mSaleOrder Create (0.2ms)[0m   [0mINSERT INTO "sale_orders" ("sale_id", "created_at", "product_id", "updated_at") VALUES(3, '2010-04-01 19:33:12', 1, '2010-04-01 19:33:12')[0m
+Redirected to http://0.0.0.0:3000/sales/3
+Completed in 25ms (DB: 1) | 302 Found [http://0.0.0.0/sales]
+
+
+Processing SalesController#show (for 127.0.0.1 at 2010-04-01 16:33:12) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sales/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/sales/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 16:33:14) [GET]
+  [4;35;1mSale Load (0.6ms)[0m   [0mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 85ms (View: 80, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#edit (for 127.0.0.1 at 2010-04-01 16:33:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSale Load (0.2ms)[0m   [0;1mSELECT * FROM "sales" WHERE ("sales"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sales/edit
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 3)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = 3)) [0m
+Rendered sales/_form (35.3ms)
+Completed in 44ms (View: 36, DB: 1) | 200 OK [http://0.0.0.0/sales/3/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#index (for 127.0.0.1 at 2010-04-01 16:33:17) [GET]
+  [4;35;1mSale Load (0.6ms)[0m   [0mSELECT * FROM "sales" [0m
+Rendering template within layouts/application
+Rendering sales/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/sales]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:33:35) [GET]
+  [4;36;1mPurchase Load (0.4ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/purchases/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:33:36) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (87.1ms)
+Completed in 95ms (View: 88, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-04-01 16:33:40) [POST]
+  Parameters: {"commit"=>"Create Purchase", "purchase"=>{"product_ids"=>["", "1", "", "2"], "date(1i)"=>"2010", "date(2i)"=>"4", "date(3i)"=>"1"}, "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0="}
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" IN (1,2)) [0m
+  [4;35;1mPurchase Create (0.4ms)[0m   [0mINSERT INTO "purchases" ("created_at", "updated_at", "date") VALUES('2010-04-01 19:33:40', '2010-04-01 19:33:40', '2010-04-01')[0m
+  [4;36;1mPurchaseOrder Create (0.1ms)[0m   [0;1mINSERT INTO "purchase_orders" ("created_at", "product_id", "updated_at", "purchase_id") VALUES('2010-04-01 19:33:40', 1, '2010-04-01 19:33:40', 1)[0m
+  [4;35;1mPurchaseOrder Create (0.1ms)[0m   [0mINSERT INTO "purchase_orders" ("created_at", "product_id", "updated_at", "purchase_id") VALUES('2010-04-01 19:33:40', 2, '2010-04-01 19:33:40', 1)[0m
+Redirected to http://0.0.0.0:3000/purchases/1
+Completed in 24ms (DB: 1) | 302 Found [http://0.0.0.0/purchases]
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-04-01 16:33:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPurchase Load (0.2ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering purchases/show
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/purchases/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:33:42) [GET]
+  [4;35;1mPurchase Load (0.6ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 16:33:43) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (25.3ms)
+Completed in 32ms (View: 26, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-04-01 16:33:46) [POST]
+  Parameters: {"commit"=>"Create Purchase", "purchase"=>{"product_ids"=>["", "", "2"], "date(1i)"=>"2010", "date(2i)"=>"4", "date(3i)"=>"1"}, "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0="}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;36;1mPurchase Create (0.4ms)[0m   [0;1mINSERT INTO "purchases" ("created_at", "updated_at", "date") VALUES('2010-04-01 19:33:46', '2010-04-01 19:33:46', '2010-04-01')[0m
+  [4;35;1mPurchaseOrder Create (0.2ms)[0m   [0mINSERT INTO "purchase_orders" ("created_at", "product_id", "updated_at", "purchase_id") VALUES('2010-04-01 19:33:46', 2, '2010-04-01 19:33:46', 2)[0m
+Redirected to http://0.0.0.0:3000/purchases/2
+Completed in 23ms (DB: 1) | 302 Found [http://0.0.0.0/purchases]
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-04-01 16:33:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPurchase Load (0.2ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering purchases/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/purchases/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:33:47) [GET]
+  [4;35;1mPurchase Load (0.6ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#edit (for 127.0.0.1 at 2010-04-01 16:33:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPurchase Load (0.2ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering purchases/edit
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = 2)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = 2)) [0m
+Rendered purchases/_form (25.6ms)
+Completed in 37ms (View: 31, DB: 1) | 200 OK [http://0.0.0.0/purchases/2/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:33:50) [GET]
+  [4;36;1mPurchase Load (0.6ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:33:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 16:34:13) [GET]
+  [4;35;1mPurchase Load (0.6ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 16:34:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-04-01 19:36:18) [GET]
+Rendering template within layouts/application
+Rendering products/new
+  [4;36;1mBrand Load (0.4ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendered products/_form (14.0ms)
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/products/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:36:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 19:36:40) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (24.4ms)
+Completed in 90ms (View: 26, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:36:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 19:37:06) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (79.0ms)
+Completed in 86ms (View: 80, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:37:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 19:38:35) [GET]
+  [4;35;1mPurchase Load (0.6ms)[0m   [0mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:38:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#edit (for 127.0.0.1 at 2010-04-01 19:38:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPurchase Load (0.2ms)[0m   [0;1mSELECT * FROM "purchases" WHERE ("purchases"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering purchases/edit
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = 1)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = 1)) [0m
+Rendered purchases/_form (86.8ms)
+Completed in 94ms (View: 88, DB: 1) | 200 OK [http://0.0.0.0/purchases/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:38:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 19:38:46) [GET]
+  [4;36;1mPurchase Load (0.6ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:38:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#new (for 127.0.0.1 at 2010-04-01 19:38:47) [GET]
+Rendering template within layouts/application
+Rendering purchases/new
+  [4;35;1mProduct Load (0.5ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "purchase_orders" ON "products".id = "purchase_orders".product_id WHERE (("purchase_orders".purchase_id = NULL)) [0m
+Rendered purchases/_form (85.5ms)
+Completed in 92ms (View: 87, DB: 1) | 200 OK [http://0.0.0.0/purchases/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:38:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#create (for 127.0.0.1 at 2010-04-01 19:38:58) [POST]
+  Parameters: {"commit"=>"Create Purchase", "purchase"=>{"product_ids"=>["", "", "2"], "date(1i)"=>"2010", "date(2i)"=>"3", "date(3i)"=>"13"}, "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0="}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+  [4;35;1mPurchase Create (0.4ms)[0m   [0mINSERT INTO "purchases" ("created_at", "updated_at", "date") VALUES('2010-04-01 22:38:58', '2010-04-01 22:38:58', '2010-03-13')[0m
+  [4;36;1mPurchaseOrder Create (0.2ms)[0m   [0;1mINSERT INTO "purchase_orders" ("created_at", "product_id", "updated_at", "purchase_id") VALUES('2010-04-01 22:38:58', 2, '2010-04-01 22:38:58', 3)[0m
+Redirected to http://0.0.0.0:3000/purchases/3
+Completed in 798ms (DB: 1) | 302 Found [http://0.0.0.0/purchases]
+
+
+Processing PurchasesController#show (for 127.0.0.1 at 2010-04-01 19:38:59) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPurchase Load (0.2ms)[0m   [0mSELECT * FROM "purchases" WHERE ("purchases"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering purchases/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/purchases/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:38:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PurchasesController#index (for 127.0.0.1 at 2010-04-01 19:39:02) [GET]
+  [4;36;1mPurchase Load (0.6ms)[0m   [0;1mSELECT * FROM "purchases" [0m
+Rendering template within layouts/application
+Rendering purchases/index
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/purchases]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:39:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 19:39:18) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+Rendered sales/_form (29.9ms)
+Completed in 37ms (View: 31, DB: 1) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:39:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#new (for 127.0.0.1 at 2010-04-01 19:41:24) [GET]
+Rendering template within layouts/application
+Rendering clients/new
+Rendered clients/_form (9.1ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/clients/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:41:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#new (for 127.0.0.1 at 2010-04-01 19:41:48) [GET]
+Rendering template within layouts/application
+Rendering clients/new
+Rendered clients/_form (9.5ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/clients/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:41:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#create (for 127.0.0.1 at 2010-04-01 19:41:57) [POST]
+  Parameters: {"commit"=>"Create Client", "authenticity_token"=>"ZWwHkt+nOi/yGCKedFOQ/oKRWiaHDJHfmvLOZvgz3V0=", "client"=>{"address"=>"JGOIJHGRO", "name"=>"Pedro Vanzella", "telephone"=>"123455", "rg"=>"20135250945", "email"=>"maria@maria.com"}}
+  [4;35;1mClient Create (0.4ms)[0m   [0mINSERT INTO "clients" ("name", "address", "created_at", "updated_at", "telephone", "email", "rg") VALUES('Pedro Vanzella', 'JGOIJHGRO', '2010-04-01 22:41:57', '2010-04-01 22:41:57', 123455, 'maria@maria.com', 20135250945)[0m
+Redirected to http://0.0.0.0:3000/clients/3
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/clients]
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-04-01 19:41:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering clients/show
+Completed in 72ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/clients/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:41:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-04-01 19:41:59) [GET]
+  [4;35;1mClient Load (0.7ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/clients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:41:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SalesController#new (for 127.0.0.1 at 2010-04-01 19:42:02) [GET]
+Rendering template within layouts/application
+Rendering sales/new
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM "clients" [0m
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "products".id FROM "products" INNER JOIN "sale_orders" ON "products".id = "sale_orders".product_id WHERE (("sale_orders".sale_id = NULL)) [0m
+Rendered sales/_form (86.4ms)
+Completed in 94ms (View: 87, DB: 1) | 200 OK [http://0.0.0.0/sales/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:42:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-04-01 19:43:01) [GET]
+Rendering template within layouts/application
+Rendering products/new
+  [4;36;1mBrand Load (0.4ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendered products/_form (14.2ms)
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/products/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 19:43:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

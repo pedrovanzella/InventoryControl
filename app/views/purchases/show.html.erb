@@ -1,0 +1,12 @@
+<% title "purchase" %>
+
+<p>
+  <strong>Date:</strong>
+  <%=h @purchase.date %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_purchase_path(@purchase) %> |
+  <%= link_to "Destroy", @purchase, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", purchases_path %>
+</p>

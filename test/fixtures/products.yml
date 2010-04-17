@@ -1,0 +1,13 @@
+one:
+  name: MyString
+  brand_id: 1
+  bought_price: 1.5
+  sale_price: 1.5
+  stock_ammount: 1
+
+two:
+  name: MyString
+  brand_id: 1
+  bought_price: 1.5
+  sale_price: 1.5
+  stock_ammount: 1
