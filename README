@@ -1,4 +1,27 @@
 This project aims to provide a simple web interface to control inventory for small to medium businesses.
-Currently it runs on Rails 2.3.1 and Ruby 1.8.7, but I plan on upgrading to Rails 3 and Ruby 1.9.2.
+Currently it runs on Rails 2.3.1 and Ruby 1.8.7 and uses Formtastic to handle the complex model forms.
 
-Very little functionality is in place right now, just some basic scaffolding for the models (and some wrong named ones).
+Very little functionality is in place right now, just some basic scaffolding for the models.
+
+Feel free to contribute :)
+
+TODO:
+BETTER DO EARLY:
+	* Upgrade to Rails 3.0 as soon as it's stable
+
+ABSOLUTE BASICS:
+	* When creating a new sale you should be able to modify the sale price (and it must be stored separate from the original price)
+	* Same goes for purchase and the purchase price
+	* The amount in the inventory must be increased/decreased when a product is sold / bought
+
+GETTING FANCY:
+	* Nice google-style autocompletion for names, no checkboxes or dropboxes on nested models
+	* Good-looking front page
+	
+REPORTS:
+	* Best buyers
+	* Detailed inventory history for each product
+		* How much sold by time
+		* Price fluctuation
+
+* ???
