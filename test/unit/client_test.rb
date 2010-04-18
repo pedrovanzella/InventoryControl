@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class ClientTest < ActiveSupport::TestCase
+class CustomerTest < ActiveSupport::TestCase
   def test_should_be_valid
-    assert Client.new.valid?
+    assert Customer.new.valid?
   end
 end

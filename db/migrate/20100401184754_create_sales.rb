@@ -1,7 +1,7 @@
 class CreateSales < ActiveRecord::Migration
   def self.up
     create_table :sales do |t|
-      t.integer :client_id
+      t.integer :customer_id
       t.date :date
       t.timestamps
     end

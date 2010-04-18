@@ -2,12 +2,12 @@
 
 <table>
   <tr>
-    <th>Client</th>
+    <th>Customer</th>
     <th>Date</th>
   </tr>
   <% for sale in @sales %>
     <tr>
-      <td><%=h sale.client_id %></td>
+      <td><%=h sale.customer_id %></td>
       <td><%=h sale.date %></td>
       <td><%= link_to "Show", sale %></td>
       <td><%= link_to "Edit", edit_sale_path(sale) %></td>

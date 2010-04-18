@@ -555,9 +555,9 @@ var Draggable = Class.create({
       if (w.innerWidth) {
         W = w.innerWidth;
         H = w.innerHeight;
-      } else if (w.document.documentElement && documentElement.clientWidth) {
-        W = documentElement.clientWidth;
-        H = documentElement.clientHeight;
+      } else if (w.document.documentElement && documentElement.customerWidth) {
+        W = documentElement.customerWidth;
+        H = documentElement.customerHeight;
       } else {
         W = body.offsetWidth;
         H = body.offsetHeight;
@@ -830,9 +830,9 @@ var Sortable = {
 
     if(position=='after')
       if(sortable.overlap == 'horizontal')
-        Sortable._marker.setStyle({left: (offsets[0]+dropon.clientWidth) + 'px'});
+        Sortable._marker.setStyle({left: (offsets[0]+dropon.customerWidth) + 'px'});
       else
-        Sortable._marker.setStyle({top: (offsets[1]+dropon.clientHeight) + 'px'});
+        Sortable._marker.setStyle({top: (offsets[1]+dropon.customerHeight) + 'px'});
 
     Sortable._marker.show();
   },

@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(:version => 20100401190053) do
     t.datetime "updated_at"
   end
 
-  create_table "clients", :force => true do |t|
+  create_table "customers", :force => true do |t|
     t.string   "name"
     t.integer  "telephone"
     t.text     "address"
@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(:version => 20100401190053) do
   end
 
   create_table "sales", :force => true do |t|
-    t.integer  "client_id"
+    t.integer  "customer_id"
     t.date     "date"
     t.datetime "created_at"
     t.datetime "updated_at"

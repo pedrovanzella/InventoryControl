@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :sales
 
-  map.resources :clients
+  map.resources :customers
 
   map.resources :products
 
