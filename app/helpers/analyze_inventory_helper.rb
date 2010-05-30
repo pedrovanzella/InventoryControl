@@ -1,0 +1,2 @@
+module AnalyzeInventoryHelper
+end

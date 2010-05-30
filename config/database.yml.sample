@@ -2,7 +2,7 @@ default: &default
   adapter: postgresql
   encoding: utf8
   username: postgres
-  password: ()pgsql09
+  password: <insira_sua_senha>
   host: localhost
 
 development:

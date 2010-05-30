@@ -1,5 +1,4 @@
 class Product < ActiveRecord::Base
-  attr_accessible :name, :brand_id, :bought_price, :sale_price, :stock_ammount
   belongs_to :brand
   
   has_many :sale_orders
