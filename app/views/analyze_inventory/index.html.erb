@@ -3,6 +3,13 @@
 <center><%= link_to "Produtos", products_path %> <%= link_to "Categorias", brands_path %></center>
 <br />
 <br />
+<% semantic_form_for @search do |form| %>
+  <%= form.label :name_like, :label => "Nome:" %>
+  <%= form.text_field :name_like %>
+  <%= submit_tag "Pesquisar" %>
+  <%= submit_tag "Limpar", params[:name_like] => nil %>
+<% end %>
+<% if @products_count > 0 %>
 <table cellspacing="1" class="tablesorter">
   <thead>  
     <tr>
@@ -15,7 +22,7 @@
   </thead>
   <tbody>
   <% for product in @products %>
-    <tr <% if product.stock_ammount == product.stock_minimum %> class="stock_minimum" <% end %>>
+    <tr <% if product.stock_ammount <= product.stock_minimum %> class="stock_minimum" <% end %>>
       <td><%=h product.name %></td>
       <td><%=h product.brand.name %></td>
       <td><%=h product.bought_price %></td>
@@ -25,6 +32,9 @@
   <% end %>
   </tbody>
 </table>
+<% else %>
+Não há nenhum produto para listar.
+<% end%>
 <br />
 <div id="pager" class="pager">
     <form>

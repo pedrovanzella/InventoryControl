@@ -1,0 +1,6 @@
+br:
+  new: "novo"
+  edit: "editar"
+  show: "exibir"
+  products: "produtos"
+  brands: "categorias"
