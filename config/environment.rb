@@ -7,6 +7,8 @@ Rails::Initializer.run do |config|
   config.gem "josevalim-inherited_resources", :lib => "inherited_resources", :source => "http://gems.github.com"
   config.gem "searchlogic"
   config.gem "pg"
+
+  ActionController::AbstractRequest.relative_url_root = "/inventorycontrol"
   
   config.time_zone = 'Brasilia'
 
