@@ -4,7 +4,8 @@ set :deploy_to, "/var/www/#{application}"
 
 #Settings
 default_run_options[:pty] = true
-set :use_sudo, true
+ssh_options[:forward_agent] = true
+#set :use_sudo, true
 
 
 #Server
@@ -15,7 +16,9 @@ role :db, domain, :primary => true
 
 #Git
 set :scm, :git
-set :repository, "http://github.com/brunoarueira/InventoryControl.git"
+set :repository, "git@github.com:brunoarueira/InventoryControl.git"
+set :scm_verbose, true
+set :branch, "master"
 
 #Passenger
 namespace :passenger do

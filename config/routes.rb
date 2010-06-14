@@ -11,8 +11,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.root :controller => "analyze_inventory"
 
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  map.connect 'inventorycontrol/:controller/:action/:id'
+  map.connect 'inventorycontrol/:controller/:action/:id.:format'
 
   #map.connect 'special/:action/:id', :controller => 'special'
 end

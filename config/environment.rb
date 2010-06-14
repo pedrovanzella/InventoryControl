@@ -6,6 +6,7 @@ Rails::Initializer.run do |config|
   config.gem 'formtastic', :source => 'http://gemcutter.org'
   config.gem "josevalim-inherited_resources", :lib => "inherited_resources", :source => "http://gems.github.com"
   config.gem "searchlogic"
+  config.gem "pg"
   
   config.time_zone = 'Brasilia'
 
