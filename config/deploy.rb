@@ -1,9 +1,28 @@
+#Application
 set :application, "inventorycontrol"
+set :deploy_to, "/var/www/#{application}"
+
+#Settings
+default_run_options[:pty] = true
+set :use_sudo, true
+
+
+#Server
+set :user, "root"
+set :domain, "192.168.0.2"
+server domain, :app, :web
+role :db, domain, :primary => true
+
+#Git
+set :scm, :git
 set :repository, "http://github.com/brunoarueira/InventoryControl.git"
-set :deploy_to, "/#{application}"
 
-set :user, "bruno"
+#Passenger
+namespace :passenger do
+  desc "Restart Application"
+  task :restart do
+    run "touch #{current_path}/tmp/restart.txt"
+  end
+end
 
-role :app, "servidorapp"  
-role :web, "servidorapp"  
-role :db,  "servidorapp", :primary => true  
+after :deploy, "passenger:restart"

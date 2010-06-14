@@ -1,6 +1,6 @@
-<% title "Edit Product" %>
+<% title t :title_edit %>
 
-<%= render :partial => 'form' %>
+<%= render :partial => 'form', :locals => { :product => @product } %>
 
 <p>
   <%= link_to "Show", @product %> |

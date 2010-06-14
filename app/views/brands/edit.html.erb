@@ -1,6 +1,6 @@
 <% title "Edit Brand" %>
 
-<%= render :partial => 'form' %>
+<%= render :partial => 'form', :locals => { :brand => @brand } %>
 
 <p>
   <%= link_to "Show", @brand %> |

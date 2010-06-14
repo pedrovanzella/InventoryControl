@@ -2,4 +2,27 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  formtastic:
+      labels:
+          name: "Name"
+          name_like: "Name"
+          product:
+               bought_price: "Bought price"
+               sale_price: "Sale price"
+               stock_ammount: "Stock ammount"
+               stock_minimum: "Stock minimum"
+
+      actions:
+          create: "New {{model}}"
+          update: "Update"
+
+  activerecord:
+      models:
+          product:
+            one: "Product"
+            other: "Products"
+          brand: 
+            one: "Brand"
+            other: "Brands"
+
+  inventorycontrol: "Inventory Control"

@@ -1,6 +1,6 @@
 <% title "Edit Purchase" %>
 
-<%= render :partial => 'form' %>
+<%= render :partial => 'form', :locals => { :purchase => @purchase }  %>
 
 <p>
   <%= link_to "Show", @purchase %> |

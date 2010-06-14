@@ -8,23 +8,21 @@
       <th>Nome</th>
       <th>Categoria</th>
       <th>Preço de compra</th>
-      <th>Preço de venda</th>
       <th>Quantidade estocada</th>
       <th>Quantidade mínima</th>
     </tr>
   </thead>
   <tbody>
     <% for product in @products %>
-      <tr>
+      <tr <% if product.stock_ammount <= product.stock_minimum %> class="stock_minimum" <% end %>>
         <td><%=h product.name %></td>
         <td><%=h product.brand.name %></td>
         <td><%=h product.bought_price %></td>
-        <td><%=h product.sale_price %></td>
         <td><%=h product.stock_ammount %></td>
         <td><%=h product.stock_minimum %></td>
-        <td><%= link_to "Show", product %></td>
-        <td><%= link_to "Edit", edit_product_path(product) %></td>
-        <td><%= link_to "Destroy", product, :confirm => 'Are you sure?', :method => :delete %></td>
+        <td><%= link_to image_tag("show.png", :title => "Visualizar"), product %></td>
+        <td><%= link_to image_tag("edit.png", :title => "Editar"), edit_product_path(product) %></td>
+        <td><%= link_to image_tag("delete.png"), product, :confirm => 'Você deseja remover?', :method => :delete %></td>
       </tr>
     <% end %>
   </tbody>

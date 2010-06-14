@@ -52,3 +52,12 @@ div#pager {
 div#pager input[type='text'] {
     width: 80px;   
 }
+
+div#alertStockEmpty {
+    background-color: #FFA7A7;
+    border-color: #FF0000;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+}

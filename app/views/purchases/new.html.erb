@@ -1,5 +1,5 @@
 <% title "New purchase" %>
 
-<%= render :partial => 'form' %>
+<%= render :partial => 'form', :locals => { :purchase => @purchase }  %>
 
 <p><%= link_to "Back to List", purchases_path %></p>

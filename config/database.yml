@@ -9,10 +9,13 @@ development:
   database: inventorycontrol_dev
   <<: *default
 
-test:
+test: &TEST
   database: inventorycontrol_test
   <<: *default
 
 production:
   database: inventorycontrol
   <<: *default
+
+cucumber:
+  <<: *TEST

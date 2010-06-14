@@ -9,11 +9,20 @@ class AnalyzeInventoryController < ApplicationController
 #      }
 #    end
      
-     @search = Product.search(params[:search])
+     @search = Product.with_brand.ascend_by_name.search(params[:search])
      @products, @products_count = @search.all, @search.count
       
      respond_to do |format|
       format.html
      end
+  end
+
+  def stock_alert
+    @search = Product.stock_alert.search(params[:search])
+    @products, @products_count = @search.all, @search.count
+
+    respond_to do |format|
+      format.html
+    end
   end
 end
