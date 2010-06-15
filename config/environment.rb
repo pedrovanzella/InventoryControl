@@ -13,6 +13,5 @@ Rails::Initializer.run do |config|
   #config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]  
   config.i18n.default_locale = "pt-BR"
   #config.i18n.default_locale = :en
+  config.action_controller.relative_url_root = "/inventorycontrol"
 end
-
-ActionController::AbstractRequest.relative_url_root = "/inventorycontrol"
