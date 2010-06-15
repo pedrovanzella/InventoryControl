@@ -25627,3 +25627,1909 @@ ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:
   
 
 Rendering rescues/layout (not_found)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 08:53:49) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (14.7ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (19.5ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 313ms (View: 81, DB: 43) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:53:49) [GET]
+  Parameters: {"1274971916"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:53:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:53:49) [GET]
+  Parameters: {"1274808783"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:53:49) [GET]
+  Parameters: {"1274803706"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:53:49) [GET]
+  Parameters: {"1276262932"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:53:49) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:53:49) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:53:49) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 08:54:08) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;35;1mProduct Load (1.4ms)[0m   [0mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;35;1mBrand Load (0.3ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 68ms (View: 15, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:08) [GET]
+  Parameters: {"1274971916"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:08) [GET]
+  Parameters: {"1274808783"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:08) [GET]
+  Parameters: {"1274803706"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:08) [GET]
+  Parameters: {"1276262932"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:08) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:08) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:08) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 08:54:11) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 24ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:11) [GET]
+  Parameters: {"1274971916"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:11) [GET]
+  Parameters: {"1274808783"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:11) [GET]
+  Parameters: {"1274803706"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:11) [GET]
+  Parameters: {"1276262932"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:11) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:12) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:12) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 08:54:42) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;35;1mProduct Load (1.4ms)[0m   [0mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;35;1mBrand Load (0.3ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 25ms (View: 11, DB: 2) | 200 OK [http://localhost/inventorycontrol]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:42) [GET]
+  Parameters: {"1274971916"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:42) [GET]
+  Parameters: {"1274808783"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:43) [GET]
+  Parameters: {"1274803706"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:43) [GET]
+  Parameters: {"1276262932"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:43) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:43) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:43) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 08:54:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 12:41:08) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (13.2ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (44.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (23.9ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 526ms (View: 165, DB: 81) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:41:08) [GET]
+  Parameters: {"1274971916"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:41:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:41:08) [GET]
+  Parameters: {"1274808783"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:41:08) [GET]
+  Parameters: {"1274803706"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:41:08) [GET]
+  Parameters: {"1276262932"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:41:09) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:41:09) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:41:09) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 12:42:11) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;35;1mProduct Load (1.5ms)[0m   [0mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;35;1mBrand Load (0.3ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 69ms (View: 14, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:42:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:42:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:42:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:42:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:42:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:42:12) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:42:12) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:42:12) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:43:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:43:18) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 12:47:46) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 28ms (View: 11, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:47:46) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:47:46) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:47:46) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 12:48:22) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;35;1mProduct Load (1.4ms)[0m   [0mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;35;1mBrand Load (0.3ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 66ms (View: 52, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:48:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/public/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:48:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/public/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:48:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/public/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:48:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/public/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:48:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/inventorycontrol/public/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:48:22) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:48:22) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:48:23) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 12:49:19) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 29ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:19) [GET]
+  Parameters: {"1274971916"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:19) [GET]
+  Parameters: {"1274808783"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:19) [GET]
+  Parameters: {"1274803706"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:19) [GET]
+  Parameters: {"1276262932"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:19) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:19) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:19) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 12:49:20) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;35;1mProduct Load (1.4ms)[0m   [0mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;35;1mBrand Load (0.3ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 26ms (View: 10, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:20) [GET]
+  Parameters: {"1274971916"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:20) [GET]
+  Parameters: {"1274808783"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:20) [GET]
+  Parameters: {"1274803706"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:21) [GET]
+  Parameters: {"1276262932"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:21) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:21) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:21) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 12:49:30) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 47ms (View: 26, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:49:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 12:53:38) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 47ms (View: 26, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:53:38) [GET]
+
+ActionController::RoutingError (No route matches "/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:53:38) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:53:38) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:53:38) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:53:38) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:53:38) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:53:38) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets//application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:33) [GET]
+
+ActionController::RoutingError (No route matches "/pstylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:34) [GET]
+
+ActionController::RoutingError (No route matches "/pustylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:35) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:47) [GET]
+
+ActionController::RoutingError (No route matches "/pubstylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:48) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:54) [GET]
+
+ActionController::RoutingError (No route matches "/public/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:54:59) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:55:06) [GET]
+
+ActionController::RoutingError (No route matches "/public/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:55:10) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:55:30) [GET]
+
+ActionController::RoutingError (No route matches "/publi/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:55:42) [GET]
+
+ActionController::RoutingError (No route matches "/publi/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:56:02) [GET]
+
+ActionController::RoutingError (No route matches "/rol/public/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 12:56:58) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;35;1mProduct Load (1.4ms)[0m   [0mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;35;1mBrand Load (0.3ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 24ms (View: 10, DB: 2) | 200 OK [http://localhost/inventorycontrol]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:56:58) [GET]
+
+ActionController::RoutingError (No route matches "/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:56:58) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:56:58) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:56:58) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:56:59) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:56:59) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:56:59) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 12:57:32) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 30ms (View: 14, DB: 3) | 200 OK [http://localhost/inventorycontrol]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:57:32) [GET]
+
+ActionController::RoutingError (No route matches "/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:57:32) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:57:32) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:57:32) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:57:32) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:57:32) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 12:57:32) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:02:21) [GET]
+
+ActionController::RoutingError (No route matches "/inventorycontrol" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 13:02:50) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 47ms (View: 26, DB: 3) | 200 OK [http://localhost/inventorycontrol]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:02:50) [GET]
+
+ActionController::RoutingError (No route matches "/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:02:50) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:02:50) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:02:50) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:02:50) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:02:50) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:02:50) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 13:09:29) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;35;1mProduct Load (1.4ms)[0m   [0mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;35;1mBrand Load (0.3ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 25ms (View: 10, DB: 3) | 200 OK [http://localhost/inventorycontrol]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:09:29) [GET]
+
+ActionController::RoutingError (No route matches "/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:09:29) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:09:29) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:09:29) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:09:29) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:09:29) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:09:29) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:11:54) [GET]
+
+ActionController::RoutingError (No route matches "/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:11:56) [GET]
+
+ActionController::RoutingError (No route matches "/i/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:11:57) [GET]
+
+ActionController::RoutingError (No route matches "/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:02) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:04) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:11) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:13) [GET]
+
+ActionController::RoutingError (No route matches "/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:18) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:28) [GET]
+
+ActionController::RoutingError (No route matches "/styless/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheeets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:36) [GET]
+
+ActionController::RoutingError (No route matches "/styles/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:47) [GET]
+
+ActionController::RoutingError (No route matches "/styles/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:12:58) [GET]
+
+ActionController::RoutingError (No route matches "/sty/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:13:00) [GET]
+
+ActionController::RoutingError (No route matches "/styless/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 13:15:12) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.6ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 31ms (View: 15, DB: 3) | 200 OK [http://localhost/inventorycontrol]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:15:13) [GET]
+  Parameters: {"1274971916"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:15:13) [GET]
+  Parameters: {"1274808783"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:15:13) [GET]
+  Parameters: {"1274803706"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:15:13) [GET]
+  Parameters: {"1276262932"=>nil}
+
+ActionController::RoutingError (No route matches "/stylesheets/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:15:13) [GET]
+  Parameters: {"1274969544"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:15:13) [GET]
+  Parameters: {"1274969526"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:15:13) [GET]
+  Parameters: {"1274969564"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery.tablesorter.pager.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 13:16:32) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 47ms (View: 26, DB: 3) | 200 OK [http://localhost/inventorycontrol]
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 13:21:36) [GET]
+
+ActionController::RoutingError (No route matches "/inventorycontrol" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-15 13:21:42) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 44ms (View: 25, DB: 2) | 200 OK [http://localhost/]

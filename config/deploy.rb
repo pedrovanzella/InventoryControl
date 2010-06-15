@@ -1,5 +1,5 @@
 #Application
-set :application, "inventorycontrol"
+set :application, config.action_controller.relative_url_root
 set :deploy_to, "/var/www/#{application}"
 
 #Settings
@@ -10,8 +10,8 @@ set :use_sudo, true
 
 #Server
 set :user, "root"
-#set :domain, "127.0.0.1"
-set :domain, "192.168.0.2"
+set :domain, "127.0.0.1"
+#set :domain, "192.168.0.2"
 server domain, :app, :web
 #role :app, "#{application}"
 #role :web, "#{application}"
