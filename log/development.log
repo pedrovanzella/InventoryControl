@@ -27675,3 +27675,65 @@ Rendering template within layouts/application
 Rendering analyze_inventory/index
   [4;35;1mBrand Load (0.4ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
 Completed in 34ms (View: 14, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-16 10:51:08) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.5ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 30ms (View: 14, DB: 3) | 200 OK [http://localhost/]
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-16 10:51:39) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.4ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 52ms (View: 29, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-16 10:52:24) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;35;1mProduct Load (1.4ms)[0m   [0mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;35;1mBrand Load (0.3ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 25ms (View: 11, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-16 10:52:25) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 27ms (View: 11, DB: 3) | 200 OK [http://localhost/]
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-16 10:52:33) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.9ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 47ms (View: 26, DB: 3) | 200 OK [http://localhost/]

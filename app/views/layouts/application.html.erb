@@ -3,9 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_merged :base %>
+    <%= stylesheet_link_merged("base") %>
     
-    <%= javascript_include_merged :base %>
+    <%= javascript_include_merged("base") %>
     <%= yield(:head) %>
   </head>
   <body>
