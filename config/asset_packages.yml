@@ -1,0 +1,13 @@
+--- 
+javascripts: 
+- base: 
+  - jquery-1.4.2.min
+  - jquery.tablesorter.min
+  - jquery.tablesorter.pager
+  - application
+stylesheets: 
+- base: 
+  - application
+  - style
+  - formtastic_changes
+  - formtastic
