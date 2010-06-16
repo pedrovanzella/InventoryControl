@@ -1,5 +1,5 @@
 #Application
-set :application, config.action_controller.relative_url_root
+set :application, "inventorycontrol"
 set :deploy_to, "/var/www/#{application}"
 
 #Settings
