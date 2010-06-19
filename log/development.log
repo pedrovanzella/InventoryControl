@@ -27737,3 +27737,463 @@ Rendering template within layouts/application
 Rendering analyze_inventory/index
   [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
 Completed in 47ms (View: 26, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-16 11:10:31) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;35;1mProduct Load (1.4ms)[0m   [0mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;35;1mBrand Load (0.3ms)[0m   [0mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 25ms (View: 10, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-16 11:15:51) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.5ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 27ms (View: 11, DB: 3) | 200 OK [http://localhost/]
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-16 11:17:28) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.5ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 46ms (View: 26, DB: 3) | 200 OK [http://localhost/]
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-16 11:18:35) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 47ms (View: 26, DB: 3) | 200 OK [http://localhost/]
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-16 11:19:07) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (1.7ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (0.3ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 47ms (View: 26, DB: 3) | 200 OK [http://localhost/]
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing AnalyzeInventoryController#index (for 127.0.0.1 at 2010-06-17 20:18:44) [GET]
+  Parameters: {"locale"=>"pt-BR"}
+  [4;36;1mProduct Load (11.0ms)[0m   [0;1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id ORDER BY products.name ASC[0m
+  [4;35;1mSQL (8.6ms)[0m   [0mSELECT count(*) AS count_all FROM "products" INNER JOIN "brands" ON "brands".id = "products".brand_id [0m
+Rendering template within layouts/application
+Rendering analyze_inventory/index
+  [4;36;1mBrand Load (21.6ms)[0m   [0;1mSELECT * FROM "brands" WHERE ("brands"."id" = 3) [0m
+Completed in 322ms (View: 78, DB: 42) | 200 OK [http://localhost/]
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (7.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (261.3ms)[0m   [0;1mDROP DATABASE IF EXISTS "inventorycontrol_test"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (6430.4ms)[0m   [0;1mCREATE DATABASE "inventorycontrol_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (49.2ms)[0m   [0mCREATE TABLE "brands" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (89.4ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "telephone" integer, "address" text, "email" character varying(255), "rg" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (297.8ms)[0m   [0mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" timestamp, "updated_at" timestamp, "stock_minimum" integer) [0m
+  [4;36;1mSQL (48.8ms)[0m   [0;1mCREATE INDEX "index_products_on_brand_id" ON "products" ("brand_id")[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mCREATE TABLE "purchase_orders" ("id" serial primary key, "product_id" integer, "purchase_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (49.2ms)[0m   [0;1mCREATE INDEX "index_purchase_orders_on_product_id" ON "purchase_orders" ("product_id")[0m
+  [4;35;1mSQL (40.5ms)[0m   [0mCREATE INDEX "index_purchase_orders_on_purchase_id" ON "purchase_orders" ("purchase_id")[0m
+  [4;36;1mSQL (45.3ms)[0m   [0;1mCREATE TABLE "purchases" ("id" serial primary key, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (45.3ms)[0m   [0mCREATE TABLE "sale_orders" ("id" serial primary key, "sale_id" integer, "product_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCREATE INDEX "index_sale_orders_on_product_id" ON "sale_orders" ("product_id")[0m
+  [4;35;1mSQL (40.8ms)[0m   [0mCREATE INDEX "index_sale_orders_on_sale_id" ON "sale_orders" ("sale_id")[0m
+  [4;36;1mSQL (53.1ms)[0m   [0;1mCREATE TABLE "sales" ("id" serial primary key, "customer_id" integer, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (49.8ms)[0m   [0mCREATE INDEX "index_sales_on_customer_id" ON "sales" ("customer_id")[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (41.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (11.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611143630')[0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100525172704')[0m
+  [4;35;1mSQL (7.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182907')[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401185943')[0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184839')[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401183358')[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182237')[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401184754')[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (235.4ms)[0m   [0;1mDROP DATABASE IF EXISTS "inventorycontrol_test"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (5591.5ms)[0m   [0;1mCREATE DATABASE "inventorycontrol_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (40.4ms)[0m   [0mCREATE TABLE "brands" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (87.2ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "telephone" integer, "address" text, "email" character varying(255), "rg" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (56.1ms)[0m   [0mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" timestamp, "updated_at" timestamp, "stock_minimum" integer) [0m
+  [4;36;1mSQL (49.5ms)[0m   [0;1mCREATE INDEX "index_products_on_brand_id" ON "products" ("brand_id")[0m
+  [4;35;1mSQL (40.1ms)[0m   [0mCREATE TABLE "purchase_orders" ("id" serial primary key, "product_id" integer, "purchase_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (40.5ms)[0m   [0;1mCREATE INDEX "index_purchase_orders_on_product_id" ON "purchase_orders" ("product_id")[0m
+  [4;35;1mSQL (41.7ms)[0m   [0mCREATE INDEX "index_purchase_orders_on_purchase_id" ON "purchase_orders" ("purchase_id")[0m
+  [4;36;1mSQL (53.3ms)[0m   [0;1mCREATE TABLE "purchases" ("id" serial primary key, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (65.2ms)[0m   [0mCREATE TABLE "sale_orders" ("id" serial primary key, "sale_id" integer, "product_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (57.3ms)[0m   [0;1mCREATE INDEX "index_sale_orders_on_product_id" ON "sale_orders" ("product_id")[0m
+  [4;35;1mSQL (40.4ms)[0m   [0mCREATE INDEX "index_sale_orders_on_sale_id" ON "sale_orders" ("sale_id")[0m
+  [4;36;1mSQL (53.2ms)[0m   [0;1mCREATE TABLE "sales" ("id" serial primary key, "customer_id" integer, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (50.0ms)[0m   [0mCREATE INDEX "index_sales_on_customer_id" ON "sales" ("customer_id")[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (41.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (10.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611143630')[0m
+  [4;36;1mSQL (7.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100525172704')[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182907')[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401185943')[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184839')[0m
+  [4;35;1mSQL (8.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401183358')[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182237')[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401184754')[0m
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (233.0ms)[0m   [0;1mDROP DATABASE IF EXISTS "inventorycontrol_test"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (5526.4ms)[0m   [0;1mCREATE DATABASE "inventorycontrol_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (51.5ms)[0m   [0mCREATE TABLE "brands" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (77.0ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "telephone" integer, "address" text, "email" character varying(255), "rg" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (60.5ms)[0m   [0mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" timestamp, "updated_at" timestamp, "stock_minimum" integer) [0m
+  [4;36;1mSQL (57.2ms)[0m   [0;1mCREATE INDEX "index_products_on_brand_id" ON "products" ("brand_id")[0m
+  [4;35;1mSQL (52.6ms)[0m   [0mCREATE TABLE "purchase_orders" ("id" serial primary key, "product_id" integer, "purchase_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (56.8ms)[0m   [0;1mCREATE INDEX "index_purchase_orders_on_product_id" ON "purchase_orders" ("product_id")[0m
+  [4;35;1mSQL (40.8ms)[0m   [0mCREATE INDEX "index_purchase_orders_on_purchase_id" ON "purchase_orders" ("purchase_id")[0m
+  [4;36;1mSQL (53.7ms)[0m   [0;1mCREATE TABLE "purchases" ("id" serial primary key, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (60.7ms)[0m   [0mCREATE TABLE "sale_orders" ("id" serial primary key, "sale_id" integer, "product_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (40.6ms)[0m   [0;1mCREATE INDEX "index_sale_orders_on_product_id" ON "sale_orders" ("product_id")[0m
+  [4;35;1mSQL (49.2ms)[0m   [0mCREATE INDEX "index_sale_orders_on_sale_id" ON "sale_orders" ("sale_id")[0m
+  [4;36;1mSQL (52.8ms)[0m   [0;1mCREATE TABLE "sales" ("id" serial primary key, "customer_id" integer, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (49.1ms)[0m   [0mCREATE INDEX "index_sales_on_customer_id" ON "sales" ("customer_id")[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (41.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (10.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611143630')[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100525172704')[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (7.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182907')[0m
+  [4;35;1mSQL (8.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401185943')[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184839')[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401183358')[0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182237')[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401184754')[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (232.5ms)[0m   [0;1mDROP DATABASE IF EXISTS "inventorycontrol_test"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (5735.3ms)[0m   [0;1mCREATE DATABASE "inventorycontrol_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (56.9ms)[0m   [0mCREATE TABLE "brands" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (81.3ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "telephone" integer, "address" text, "email" character varying(255), "rg" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (56.0ms)[0m   [0mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" timestamp, "updated_at" timestamp, "stock_minimum" integer) [0m
+  [4;36;1mSQL (58.3ms)[0m   [0;1mCREATE INDEX "index_products_on_brand_id" ON "products" ("brand_id")[0m
+  [4;35;1mSQL (44.3ms)[0m   [0mCREATE TABLE "purchase_orders" ("id" serial primary key, "product_id" integer, "purchase_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (57.6ms)[0m   [0;1mCREATE INDEX "index_purchase_orders_on_product_id" ON "purchase_orders" ("product_id")[0m
+  [4;35;1mSQL (41.7ms)[0m   [0mCREATE INDEX "index_purchase_orders_on_purchase_id" ON "purchase_orders" ("purchase_id")[0m
+  [4;36;1mSQL (53.1ms)[0m   [0;1mCREATE TABLE "purchases" ("id" serial primary key, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (56.5ms)[0m   [0mCREATE TABLE "sale_orders" ("id" serial primary key, "sale_id" integer, "product_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (57.7ms)[0m   [0;1mCREATE INDEX "index_sale_orders_on_product_id" ON "sale_orders" ("product_id")[0m
+  [4;35;1mSQL (33.6ms)[0m   [0mCREATE INDEX "index_sale_orders_on_sale_id" ON "sale_orders" ("sale_id")[0m
+  [4;36;1mSQL (52.4ms)[0m   [0;1mCREATE TABLE "sales" ("id" serial primary key, "customer_id" integer, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (58.1ms)[0m   [0mCREATE INDEX "index_sales_on_customer_id" ON "sales" ("customer_id")[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (40.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (11.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611143630')[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100525172704')[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (7.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182907')[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401185943')[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184839')[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401183358')[0m
+  [4;36;1mSQL (7.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182237')[0m
+  [4;35;1mSQL (8.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401184754')[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (230.1ms)[0m   [0;1mDROP DATABASE IF EXISTS "inventorycontrol_test"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (5495.7ms)[0m   [0;1mCREATE DATABASE "inventorycontrol_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (33.4ms)[0m   [0mCREATE TABLE "brands" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (110.5ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "telephone" integer, "address" text, "email" character varying(255), "rg" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (59.4ms)[0m   [0mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" timestamp, "updated_at" timestamp, "stock_minimum" integer) [0m
+  [4;36;1mSQL (49.2ms)[0m   [0;1mCREATE INDEX "index_products_on_brand_id" ON "products" ("brand_id")[0m
+  [4;35;1mSQL (52.6ms)[0m   [0mCREATE TABLE "purchase_orders" ("id" serial primary key, "product_id" integer, "purchase_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (65.1ms)[0m   [0;1mCREATE INDEX "index_purchase_orders_on_product_id" ON "purchase_orders" ("product_id")[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mCREATE INDEX "index_purchase_orders_on_purchase_id" ON "purchase_orders" ("purchase_id")[0m
+  [4;36;1mSQL (45.6ms)[0m   [0;1mCREATE TABLE "purchases" ("id" serial primary key, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (52.3ms)[0m   [0mCREATE TABLE "sale_orders" ("id" serial primary key, "sale_id" integer, "product_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (32.7ms)[0m   [0;1mCREATE INDEX "index_sale_orders_on_product_id" ON "sale_orders" ("product_id")[0m
+  [4;35;1mSQL (40.4ms)[0m   [0mCREATE INDEX "index_sale_orders_on_sale_id" ON "sale_orders" ("sale_id")[0m
+  [4;36;1mSQL (45.1ms)[0m   [0;1mCREATE TABLE "sales" ("id" serial primary key, "customer_id" integer, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (40.3ms)[0m   [0mCREATE INDEX "index_sales_on_customer_id" ON "sales" ("customer_id")[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (40.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (11.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611143630')[0m
+  [4;36;1mSQL (8.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100525172704')[0m
+  [4;35;1mSQL (7.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182907')[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401185943')[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184839')[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401183358')[0m
+  [4;36;1mSQL (8.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182237')[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401184754')[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (534.2ms)[0m   [0;1mDROP DATABASE IF EXISTS "inventorycontrol_test"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (5659.8ms)[0m   [0;1mCREATE DATABASE "inventorycontrol_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mCREATE TABLE "brands" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (93.8ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "telephone" integer, "address" text, "email" character varying(255), "rg" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (60.5ms)[0m   [0mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" timestamp, "updated_at" timestamp, "stock_minimum" integer) [0m
+  [4;36;1mSQL (48.6ms)[0m   [0;1mCREATE INDEX "index_products_on_brand_id" ON "products" ("brand_id")[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mCREATE TABLE "purchase_orders" ("id" serial primary key, "product_id" integer, "purchase_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (49.7ms)[0m   [0;1mCREATE INDEX "index_purchase_orders_on_product_id" ON "purchase_orders" ("product_id")[0m
+  [4;35;1mSQL (40.5ms)[0m   [0mCREATE INDEX "index_purchase_orders_on_purchase_id" ON "purchase_orders" ("purchase_id")[0m
+  [4;36;1mSQL (86.5ms)[0m   [0;1mCREATE TABLE "purchases" ("id" serial primary key, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (60.6ms)[0m   [0mCREATE TABLE "sale_orders" ("id" serial primary key, "sale_id" integer, "product_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (57.4ms)[0m   [0;1mCREATE INDEX "index_sale_orders_on_product_id" ON "sale_orders" ("product_id")[0m
+  [4;35;1mSQL (49.0ms)[0m   [0mCREATE INDEX "index_sale_orders_on_sale_id" ON "sale_orders" ("sale_id")[0m
+  [4;36;1mSQL (53.2ms)[0m   [0;1mCREATE TABLE "sales" ("id" serial primary key, "customer_id" integer, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (65.6ms)[0m   [0mCREATE INDEX "index_sales_on_customer_id" ON "sales" ("customer_id")[0m
+  [4;36;1mSQL (12.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (41.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (10.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611143630')[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100525172704')[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (8.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182907')[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401185943')[0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184839')[0m
+  [4;35;1mSQL (8.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401183358')[0m
+  [4;36;1mSQL (7.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182237')[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401184754')[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (227.5ms)[0m   [0;1mDROP DATABASE IF EXISTS "inventorycontrol_test"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (5744.0ms)[0m   [0;1mCREATE DATABASE "inventorycontrol_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (52.2ms)[0m   [0mCREATE TABLE "brands" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (93.4ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "telephone" integer, "address" text, "email" character varying(255), "rg" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (68.4ms)[0m   [0mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" timestamp, "updated_at" timestamp, "stock_minimum" integer) [0m
+  [4;36;1mSQL (49.1ms)[0m   [0;1mCREATE INDEX "index_products_on_brand_id" ON "products" ("brand_id")[0m
+  [4;35;1mSQL (43.8ms)[0m   [0mCREATE TABLE "purchase_orders" ("id" serial primary key, "product_id" integer, "purchase_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (48.9ms)[0m   [0;1mCREATE INDEX "index_purchase_orders_on_product_id" ON "purchase_orders" ("product_id")[0m
+  [4;35;1mSQL (32.3ms)[0m   [0mCREATE INDEX "index_purchase_orders_on_purchase_id" ON "purchase_orders" ("purchase_id")[0m
+  [4;36;1mSQL (45.6ms)[0m   [0;1mCREATE TABLE "purchases" ("id" serial primary key, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (61.2ms)[0m   [0mCREATE TABLE "sale_orders" ("id" serial primary key, "sale_id" integer, "product_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (48.8ms)[0m   [0;1mCREATE INDEX "index_sale_orders_on_product_id" ON "sale_orders" ("product_id")[0m
+  [4;35;1mSQL (40.9ms)[0m   [0mCREATE INDEX "index_sale_orders_on_sale_id" ON "sale_orders" ("sale_id")[0m
+  [4;36;1mSQL (44.6ms)[0m   [0;1mCREATE TABLE "sales" ("id" serial primary key, "customer_id" integer, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (48.9ms)[0m   [0mCREATE INDEX "index_sales_on_customer_id" ON "sales" ("customer_id")[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (33.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (10.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611143630')[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100525172704')[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (7.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182907')[0m
+  [4;35;1mSQL (8.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401185943')[0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184839')[0m
+  [4;35;1mSQL (7.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401183358')[0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182237')[0m
+  [4;35;1mSQL (7.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401184754')[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (230.6ms)[0m   [0;1mDROP DATABASE IF EXISTS "inventorycontrol_test"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (5824.5ms)[0m   [0;1mCREATE DATABASE "inventorycontrol_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (48.0ms)[0m   [0mCREATE TABLE "brands" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (110.2ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "telephone" integer, "address" text, "email" character varying(255), "rg" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (60.0ms)[0m   [0mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" timestamp, "updated_at" timestamp, "stock_minimum" integer) [0m
+  [4;36;1mSQL (48.8ms)[0m   [0;1mCREATE INDEX "index_products_on_brand_id" ON "products" ("brand_id")[0m
+  [4;35;1mSQL (44.7ms)[0m   [0mCREATE TABLE "purchase_orders" ("id" serial primary key, "product_id" integer, "purchase_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (48.8ms)[0m   [0;1mCREATE INDEX "index_purchase_orders_on_product_id" ON "purchase_orders" ("product_id")[0m
+  [4;35;1mSQL (49.0ms)[0m   [0mCREATE INDEX "index_purchase_orders_on_purchase_id" ON "purchase_orders" ("purchase_id")[0m
+  [4;36;1mSQL (45.4ms)[0m   [0;1mCREATE TABLE "purchases" ("id" serial primary key, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (69.1ms)[0m   [0mCREATE TABLE "sale_orders" ("id" serial primary key, "sale_id" integer, "product_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (48.7ms)[0m   [0;1mCREATE INDEX "index_sale_orders_on_product_id" ON "sale_orders" ("product_id")[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mCREATE INDEX "index_sale_orders_on_sale_id" ON "sale_orders" ("sale_id")[0m
+  [4;36;1mSQL (44.3ms)[0m   [0;1mCREATE TABLE "sales" ("id" serial primary key, "customer_id" integer, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (49.0ms)[0m   [0mCREATE INDEX "index_sales_on_customer_id" ON "sales" ("customer_id")[0m
+  [4;36;1mSQL (12.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (41.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (10.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611143630')[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100525172704')[0m
+  [4;35;1mSQL (8.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (7.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182907')[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401185943')[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184839')[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401183358')[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182237')[0m
+  [4;35;1mSQL (8.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401184754')[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateCustomers (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+Migrating to AddStockMinimumToProducts (20100525172704)
+Migrating to RemoveSalePriceToProducts (20100611143630)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (234.0ms)[0m   [0;1mDROP DATABASE IF EXISTS "inventorycontrol_test"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (5791.5ms)[0m   [0;1mCREATE DATABASE "inventorycontrol_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCREATE TABLE "brands" ("id" serial primary key, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (118.6ms)[0m   [0;1mCREATE TABLE "customers" ("id" serial primary key, "name" character varying(255), "telephone" integer, "address" text, "email" character varying(255), "rg" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (76.8ms)[0m   [0mCREATE TABLE "products" ("id" serial primary key, "name" character varying(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" timestamp, "updated_at" timestamp, "stock_minimum" integer) [0m
+  [4;36;1mSQL (48.8ms)[0m   [0;1mCREATE INDEX "index_products_on_brand_id" ON "products" ("brand_id")[0m
+  [4;35;1mSQL (44.3ms)[0m   [0mCREATE TABLE "purchase_orders" ("id" serial primary key, "product_id" integer, "purchase_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (49.4ms)[0m   [0;1mCREATE INDEX "index_purchase_orders_on_product_id" ON "purchase_orders" ("product_id")[0m
+  [4;35;1mSQL (41.2ms)[0m   [0mCREATE INDEX "index_purchase_orders_on_purchase_id" ON "purchase_orders" ("purchase_id")[0m
+  [4;36;1mSQL (48.2ms)[0m   [0;1mCREATE TABLE "purchases" ("id" serial primary key, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (56.6ms)[0m   [0mCREATE TABLE "sale_orders" ("id" serial primary key, "sale_id" integer, "product_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (56.9ms)[0m   [0;1mCREATE INDEX "index_sale_orders_on_product_id" ON "sale_orders" ("product_id")[0m
+  [4;35;1mSQL (40.8ms)[0m   [0mCREATE INDEX "index_sale_orders_on_sale_id" ON "sale_orders" ("sale_id")[0m
+  [4;36;1mSQL (45.1ms)[0m   [0;1mCREATE TABLE "sales" ("id" serial primary key, "customer_id" integer, "date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (49.2ms)[0m   [0mCREATE INDEX "index_sales_on_customer_id" ON "sales" ("customer_id")[0m
+  [4;36;1mSQL (12.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (41.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (10.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100611143630')[0m
+  [4;36;1mSQL (7.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100525172704')[0m
+  [4;35;1mSQL (7.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401190053')[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182907')[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401185943')[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184839')[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401183358')[0m
+  [4;36;1mSQL (7.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182237')[0m
+  [4;35;1mSQL (8.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401184754')[0m
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)

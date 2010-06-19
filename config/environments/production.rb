@@ -9,6 +9,7 @@ config.action_controller.consider_all_requests_local = false
 config.action_controller.perform_caching             = true
 config.action_view.cache_template_loading            = true
 
+#config.action_controller.relative_url_root = "/inventorycontrol"
 # See everything in the log (default is :info)
 # config.log_level = :debug
 
@@ -19,7 +20,7 @@ config.action_view.cache_template_loading            = true
 # config.cache_store = :mem_cache_store
 
 # Enable serving of images, stylesheets, and javascripts from an asset server
-# config.action_controller.asset_host = "http://assets.example.com"
+#config.action_controller.asset_host = "http://localhost/inventorycontrol/current/public"
 
 # Disable delivery errors, bad email addresses will be ignored
 # config.action_mailer.raise_delivery_errors = false
