@@ -1,5 +1,5 @@
 This project aims to provide a simple web interface to control inventory for small to medium businesses.
-Currently it runs on Rails 2.3.1 and Ruby 1.8.7 and uses Formtastic to handle the complex model forms.
+Currently it runs on Rails 2.3.5 and Ruby 1.8.7 and uses Formtastic to handle the complex model forms.
 
 Very little functionality is in place right now, just some basic scaffolding for the models.
 

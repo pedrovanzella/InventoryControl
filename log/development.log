@@ -4803,3 +4803,96 @@ ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-04-18 22:49:25) [GET]
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/rails/info/properties]
+
+
+Processing CustomersController#index (for 127.0.0.1 at 2010-04-18 22:49:28) [GET]
+  [4;36;1mCustomer Load (0.6ms)[0m   [0;1mSELECT * FROM "customers" [0m
+Rendering template within layouts/application
+Rendering customers/index
+Completed in 106ms (View: 95, DB: 1) | 200 OK [http://0.0.0.0/Customers]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-18 22:49:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-18 22:49:35) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/application
+Rendering products/index
+Completed in 26ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/Products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-18 22:49:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-04-18 22:49:37) [GET]
+Rendering template within layouts/application
+Rendering products/new
+  [4;36;1mBrand Load (0.4ms)[0m   [0;1mSELECT * FROM "brands" [0m
+Rendered products/_form (85.0ms)
+Completed in 103ms (View: 95, DB: 0) | 200 OK [http://0.0.0.0/products/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-18 22:49:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-04-18 22:49:45) [POST]
+  Parameters: {"commit"=>"Create Product", "authenticity_token"=>"6EZvZcCDKK4S76f9V3g5hmM1wxGsTQgVuFtIIa5BZhU=", "product"=>{"name"=>"Teste", "bought_price"=>"2", "stock_ammount"=>"6", "sale_price"=>"4", "brand_id"=>"2"}}
+  [4;35;1mProduct Create (0.5ms)[0m   [0mINSERT INTO "products" ("name", "bought_price", "created_at", "updated_at", "stock_ammount", "brand_id", "sale_price") VALUES('Teste', 2.0, '2010-04-19 01:49:45', '2010-04-19 01:49:45', 6, 2, 4.0)[0m
+Redirected to http://0.0.0.0:3000/products/2
+Completed in 40ms (DB: 1) | 302 Found [http://0.0.0.0/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-04-18 22:49:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering products/show
+Completed in 36ms (View: 26, DB: 0) | 200 OK [http://0.0.0.0/products/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-18 22:49:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-18 22:49:46) [GET]
+  [4;35;1mProduct Load (1.3ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/application
+Rendering products/index
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/products]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-18 22:49:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/user.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
