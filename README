@@ -6,8 +6,9 @@ Very little functionality is in place right now, just some basic scaffolding for
 Feel free to contribute :)
 
 TODO:
-BETTER DO EARLY:
-	* Upgrade to Rails 3.0 as soon as it's stable
+WORKING ON IT:
+	* Upgrade to Rails 3.0
+	* Ensure compatibility with ruby 1.9.2
 
 ABSOLUTE BASICS:
 	* When creating a new sale you should be able to modify the sale price (and it must be stored separate from the original price)
