@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  username: postgres
+  password: <insira_sua_senha>
+  host: localhost
+
+development:
+  database: inventorycontrol_dev
+  <<: *default
+
+test:
+  database: inventorycontrol_test
+  <<: *default
+
+production:
+  database: inventorycontrol
+  <<: *default

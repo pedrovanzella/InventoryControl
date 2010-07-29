@@ -8,7 +8,9 @@ This stylesheet forms part of the Formtastic Rails Plugin
 (c) 2008 Justin French
 
 --------------------------------------------------------------------------------------------------*/
-
+form.formtastic table th, form.formtastic table tr {
+    background-color: blue;
+}
 
 /* NORMALIZE AND RESET - obviously inspired by Yahoo's reset.css, but scoped to just form.formtastic
 --------------------------------------------------------------------------------------------------*/

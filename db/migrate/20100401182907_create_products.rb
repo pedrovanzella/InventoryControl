@@ -8,6 +8,8 @@ class CreateProducts < ActiveRecord::Migration
       t.integer :stock_ammount
       t.timestamps
     end
+
+    add_index :products, :brand_id
   end
   
   def self.down

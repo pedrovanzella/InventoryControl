@@ -1,0 +1,68 @@
+# Logfile created on Fri Jun 11 21:07:25 -0300 2010Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /produtos with {} and HTTP headers {}
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /products with {} and HTTP headers {}
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /produtos with {} and HTTP headers {}
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /produtos with {} and HTTP headers {}
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /produtos with {} and HTTP headers {}
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /produtos with {} and HTTP headers {}
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)
+Translating routes (default locale: pt-BR)

@@ -5,6 +5,8 @@ class CreateSales < ActiveRecord::Migration
       t.date :date
       t.timestamps
     end
+
+    add_index :sales, :customer_id
   end
   
   def self.down

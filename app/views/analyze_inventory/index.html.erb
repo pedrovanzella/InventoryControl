@@ -1,0 +1,56 @@
+<% title t :inventorycontrol %>
+
+<center><%= link_to t('activerecord.models.product.other'), products_path %> <%= link_to t('activerecord.models.brand.other'), brands_path %></center>
+<br />
+<br />
+<% semantic_form_for @search do |form| %>
+  <%= form.label :name_like %>
+  <%= form.text_field :name_like %>
+  <%= submit_tag "Pesquisar" %>
+  <%= link_to "Limpar consulta", root_path  %>
+
+  <%= link_to "Filtrar por estoque em alerta", :action => :stock_alert %>
+<% end %>
+<% if @products_count > 0 %>
+<table cellspacing="1" class="tablesorter">
+  <thead>  
+    <tr>
+      <th><%= t 'formtastic.labels.name' %></th>
+      <th><%= t 'activerecord.models.brand.other' %></th>
+      <th><%= t 'formtastic.labels.product.bought_price' %></th>
+      <th><%= t 'formtastic.labels.product.stock_ammount' %></th>
+      <th><%= t 'formtastic.labels.product.stock_minimum' %></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% for product in @products %>
+    <tr <% if product.stock_ammount <= product.stock_minimum %> class="stock_minimum" <% end %>>
+      <td><%=h product.name %></td>
+      <td><%=h product.brand.name %></td>
+      <td><%=h product.bought_price %></td>
+      <td><%=h product.stock_ammount %></td>
+      <td><%=h product.stock_minimum %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<% else %>
+<div id="alertStockEmpty">Não há nenhum produto para listar.</div>
+<% end%>
+<br />
+<div id="pager" class="pager">
+    <form>
+        <img src="./images/first.png" class="first" />
+        <img src="./images/prev.png" class="prev" />
+        <input type="text" class="pagedisplay">
+        <img src="./images/next.png" class="next" />
+        <img src="./images/last.png" class="last" />
+        <select class="pagesize">
+            <option selected="selected" value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+        </select>
+    </form>
+</div>
+<%= link_to 'Exportar para o Excel', params.merge(:format => :xls) %>

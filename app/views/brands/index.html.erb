@@ -1,9 +1,14 @@
-<% title "Brands" %>
+<% title "Categorias" %>
 
-<table>
+<p><%= link_to "Nova categoria", new_brand_path %></p>
+
+<table cellspacing="1" class="tablesorter">
+<thead>  
   <tr>
-    <th>Name</th>
+    <th>Nome</th>
   </tr>
+</thead>
+<tbody>
   <% for brand in @brands %>
     <tr>
       <td><%=h brand.name %></td>
@@ -12,6 +17,22 @@
       <td><%= link_to "Destroy", brand, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
+</tbody>
 </table>
-
-<p><%= link_to "New Brand", new_brand_path %></p>
+<br />
+<div id="pager" class="pager">
+    <form>
+        <img src="./images/first.png" class="first" />
+        <img src="./images/prev.png" class="prev" />
+        <input type="text" class="pagedisplay">
+        <img src="./images/next.png" class="next" />
+        <img src="./images/last.png" class="last" />
+        <select class="pagesize">
+            <option selected="selected" value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+        </select>
+    </form>
+</div>
+<p><%= link_to "Voltar", root_path %></p>

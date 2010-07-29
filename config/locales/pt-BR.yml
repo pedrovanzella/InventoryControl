@@ -1,0 +1,40 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+pt-BR:
+  formtastic:
+      labels:
+          name: "Nome"
+          name_like: "Nome"
+          product:
+               bought_price: "Preço de compra"
+               sale_price: "Preço de venda"
+               stock_ammount: "Quantidade estocada"
+               stock_minimum: "Estoque mínimo"
+
+      actions:
+          create: "Novo(a) {{model}}"
+          update: "Salvar alterações"
+      
+  activerecord:
+      models:
+          product:
+            one: "Produto"
+            other: "Produtos"
+          brand: 
+            one: "Categoria"
+            other: "Categorias"
+
+  flash:
+      actions:
+          create: 
+              notice: "{{resource_name}} criado(a) com sucesso!"
+              error: "Ocorreu erro ao tentar criar o(a) {{resource_name}}!"
+          update: 
+              notice: "{{resource_name}} atualizado(a) com sucesso!"
+              error: "Ocorreu erro ao tentar atualizar o(a) {{resource_name}}!"
+          delete: 
+              notice: "{{resource_name}} removido com sucesso!"
+              error: "Ocorreu erro ao tentar atualizar o(a) {{resource_name}}"
+  
+  inventorycontrol: "Controle de Estoque"
