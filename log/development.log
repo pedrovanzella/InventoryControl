@@ -146,3 +146,491 @@ NoMethodError (undefined method `ascend_by_name' for #<ActiveRecord::Relation:0x
 Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
 Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
 Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+DEPRECATION WARNING: ActionController::Routing::Routes is deprecated. Instead, use Rails.application.routes. (called from <top (required)> at /Users/ppvanzella/Code/InventoryControl/config/routes.rb:1)
+DEPRECATION WARNING: You are using the old router DSL which will be removed in Rails 3.1. Please check how to update your routes file at: http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/. (called from initialize at /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/deprecated_mapper.rb:33)
+  [1m[36mSQL (1.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.3ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (2.3ms)[0m  CREATE TABLE "brands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.8ms)[0m  CREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "telephone" integer, "address" text, "email" varchar(255), "rg" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.8ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" datetime, "updated_at" datetime, "stock_minimum" integer) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (3.2ms)[0m  CREATE TABLE "purchase_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "purchase_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.1ms)[0m  CREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.5ms)[0m  CREATE TABLE "sale_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sale_id" integer, "product_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (1.0ms)[0m  CREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "date" date, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35mSQL (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20100611143630')[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20100401182237')
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182907')[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20100401183358')
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184754')[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20100401184839')
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20100401185943')[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20100401190053')
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20100525172704')[0m
+DEPRECATION WARNING: ActionController::Routing::Routes is deprecated. Instead, use Rails.application.routes. (called from <top (required)> at /Users/ppvanzella/Code/InventoryControl/config/routes.rb:1)
+DEPRECATION WARNING: You are using the old router DSL which will be removed in Rails 3.1. Please check how to update your routes file at: http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/. (called from initialize at /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/deprecated_mapper.rb:33)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-20 01:22:11 -0300
+  Processing by AnalyzeInventoryController#index as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from <class:Product> at /Users/ppvanzella/Code/InventoryControl/app/models/product.rb:10)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from <class:Product> at /Users/ppvanzella/Code/InventoryControl/app/models/product.rb:11)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" INNER JOIN "brands" ON "brands"."id" = "products"."brand_id"
+Completed   in 186ms
+
+NoMethodError (undefined method `ascend_by_name' for #<ActiveRecord::Relation:0x00000102918ba8>):
+  activerecord (3.0.0.rc) lib/active_record/relation.rb:366:in `method_missing'
+  app/controllers/analyze_inventory_controller.rb:12:in `index'
+  actionpack (3.0.0.rc) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.0.0.rc) lib/abstract_controller/base.rb:136:in `process_action'
+  actionpack (3.0.0.rc) lib/action_controller/metal/rendering.rb:11:in `process_action'
+  actionpack (3.0.0.rc) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:429:in `_run__3167416866345446383__process_action__3995229258778559137__callbacks'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:404:in `_run_process_action_callbacks'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:93:in `run_callbacks'
+  actionpack (3.0.0.rc) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.0.0.rc) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.0.0.rc) lib/active_support/notifications.rb:52:in `block in instrument'
+  activesupport (3.0.0.rc) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (3.0.0.rc) lib/active_support/notifications.rb:52:in `instrument'
+  actionpack (3.0.0.rc) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.0.0.rc) lib/action_controller/metal/rescue.rb:17:in `process_action'
+  actionpack (3.0.0.rc) lib/abstract_controller/base.rb:105:in `process'
+  actionpack (3.0.0.rc) lib/abstract_controller/rendering.rb:40:in `process'
+  actionpack (3.0.0.rc) lib/action_controller/metal.rb:133:in `dispatch'
+  actionpack (3.0.0.rc) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.0.0.rc) lib/action_controller/metal.rb:173:in `block in action'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:62:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:27:in `call'
+  rack-mount (0.6.9) lib/rack/mount/route_set.rb:148:in `block in call'
+  rack-mount (0.6.9) lib/rack/mount/code_generation.rb:89:in `block in recognize'
+  rack-mount (0.6.9) lib/rack/mount/code_generation.rb:66:in `optimized_each'
+  rack-mount (0.6.9) lib/rack/mount/code_generation.rb:88:in `recognize'
+  rack-mount (0.6.9) lib/rack/mount/route_set.rb:139:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:489:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/head.rb:14:in `call'
+  rack (1.2.1) lib/rack/methodoverride.rb:24:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/flash.rb:177:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/cookies.rb:268:in `call'
+  activerecord (3.0.0.rc) lib/active_record/query_cache.rb:32:in `block in call'
+  activerecord (3.0.0.rc) lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  activerecord (3.0.0.rc) lib/active_record/query_cache.rb:12:in `cache'
+  activerecord (3.0.0.rc) lib/active_record/query_cache.rb:31:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:410:in `_run_call_callbacks'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  rack (1.2.1) lib/rack/sendfile.rb:107:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  railties (3.0.0.rc) lib/rails/rack/logger.rb:13:in `call'
+  rack (1.2.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.0.0.rc) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.2.1) lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  rack (1.2.1) lib/rack/lock.rb:11:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/static.rb:30:in `call'
+  railties (3.0.0.rc) lib/rails/application.rb:168:in `call'
+  railties (3.0.0.rc) lib/rails/application.rb:77:in `method_missing'
+  railties (3.0.0.rc) lib/rails/rack/log_tailer.rb:15:in `call'
+  rack (1.2.1) lib/rack/content_length.rb:13:in `call'
+  rack (1.2.1) lib/rack/handler/webrick.rb:52:in `service'
+  /Users/ppvanzella/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/ppvanzella/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/ppvanzella/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+DEPRECATION WARNING: ActionController::Routing::Routes is deprecated. Instead, use Rails.application.routes. (called from <top (required)> at /Users/ppvanzella/Code/InventoryControl/config/routes.rb:1)
+DEPRECATION WARNING: You are using the old router DSL which will be removed in Rails 3.1. Please check how to update your routes file at: http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/. (called from initialize at /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/deprecated_mapper.rb:33)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateCustomers (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+Migrating to AddStockMinimumToProducts (20100525172704)
+Migrating to RemoveSalePriceToProducts (20100611143630)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("brands")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("customers")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("products")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("purchase_orders")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("purchases")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("sale_orders")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("sales")
+DEPRECATION WARNING: ActionController::Routing::Routes is deprecated. Instead, use Rails.application.routes. (called from <top (required)> at /Users/ppvanzella/Code/InventoryControl/config/routes.rb:1)
+DEPRECATION WARNING: You are using the old router DSL which will be removed in Rails 3.1. Please check how to update your routes file at: http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/. (called from initialize at /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/deprecated_mapper.rb:33)
+  [1m[36mSQL (0.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.8ms)[0m  [1mCREATE TABLE "brands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "telephone" integer, "address" text, "email" varchar(255), "rg" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" datetime, "updated_at" datetime, "stock_minimum" integer) [0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "purchase_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "purchase_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (2.2ms)[0m  [1mCREATE TABLE "sale_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sale_id" integer, "product_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20100611143630')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20100401182237')[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20100401182907')
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20100401183358')[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20100401184754')
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20100401184839')[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20100401185943')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20100401190053')[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20100525172704')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+DEPRECATION WARNING: ActionController::Routing::Routes is deprecated. Instead, use Rails.application.routes. (called from <top (required)> at /Users/ppvanzella/Code/InventoryControl/config/routes.rb:1)
+DEPRECATION WARNING: You are using the old router DSL which will be removed in Rails 3.1. Please check how to update your routes file at: http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/. (called from initialize at /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/deprecated_mapper.rb:33)
+  [1m[36mSQL (0.7ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.9ms)[0m  [1mDROP TABLE "brands"[0m
+  [1m[35mSQL (0.6ms)[0m  CREATE TABLE "brands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.7ms)[0m  DROP TABLE "customers"
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "telephone" integer, "address" text, "email" varchar(255), "rg" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "products"[0m
+  [1m[35mSQL (0.7ms)[0m  CREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "brand_id" integer, "bought_price" float, "stock_ammount" integer, "created_at" datetime, "updated_at" datetime, "stock_minimum" integer) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.9ms)[0m  DROP TABLE "purchase_orders"
+  [1m[36mSQL (1.1ms)[0m  [1mCREATE TABLE "purchase_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "purchase_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.8ms)[0m  [1mDROP TABLE "purchases"[0m
+  [1m[35mSQL (1.0ms)[0m  CREATE TABLE "purchases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.8ms)[0m  DROP TABLE "sale_orders"
+  [1m[36mSQL (0.9ms)[0m  [1mCREATE TABLE "sale_orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sale_id" integer, "product_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (5.0ms)[0m  [1mDROP TABLE "sales"[0m
+  [1m[35mSQL (4.4ms)[0m  CREATE TABLE "sales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "customer_id" integer, "date" date, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+DEPRECATION WARNING: ActionController::Routing::Routes is deprecated. Instead, use Rails.application.routes. (called from <top (required)> at /Users/ppvanzella/Code/InventoryControl/config/routes.rb:1)
+DEPRECATION WARNING: You are using the old router DSL which will be removed in Rails 3.1. Please check how to update your routes file at: http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/. (called from initialize at /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/deprecated_mapper.rb:33)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateBrands (20100401182237)
+Migrating to CreateProducts (20100401182907)
+Migrating to CreateCustomers (20100401183358)
+Migrating to CreateSales (20100401184754)
+Migrating to CreateSaleOrders (20100401184839)
+Migrating to CreatePurchases (20100401185943)
+Migrating to CreatePurchaseOrders (20100401190053)
+Migrating to AddStockMinimumToProducts (20100525172704)
+Migrating to RemoveSalePriceToProducts (20100611143630)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("brands")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("customers")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("products")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("purchase_orders")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("purchases")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("sale_orders")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("sales")
+DEPRECATION WARNING: ActionController::Routing::Routes is deprecated. Instead, use Rails.application.routes. (called from <top (required)> at /Users/ppvanzella/Code/InventoryControl/config/routes.rb:1)
+DEPRECATION WARNING: You are using the old router DSL which will be removed in Rails 3.1. Please check how to update your routes file at: http://www.engineyard.com/blog/2010/the-lowdown-on-routes-in-rails-3/. (called from initialize at /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/routing/deprecated_mapper.rb:33)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-20 01:24:11 -0300
+  Processing by AnalyzeInventoryController#index as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from <class:Product> at /Users/ppvanzella/Code/InventoryControl/app/models/product.rb:10)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from <class:Product> at /Users/ppvanzella/Code/InventoryControl/app/models/product.rb:11)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" INNER JOIN "brands" ON "brands"."id" = "products"."brand_id"
+Completed   in 184ms
+
+NoMethodError (undefined method `ascend_by_name' for []:ActiveRecord::Relation):
+  activerecord (3.0.0.rc) lib/active_record/relation.rb:366:in `method_missing'
+  app/controllers/analyze_inventory_controller.rb:12:in `index'
+  actionpack (3.0.0.rc) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.0.0.rc) lib/abstract_controller/base.rb:136:in `process_action'
+  actionpack (3.0.0.rc) lib/action_controller/metal/rendering.rb:11:in `process_action'
+  actionpack (3.0.0.rc) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:429:in `_run__3018443725314574046__process_action__4484984022360863294__callbacks'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:404:in `_run_process_action_callbacks'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:93:in `run_callbacks'
+  actionpack (3.0.0.rc) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.0.0.rc) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.0.0.rc) lib/active_support/notifications.rb:52:in `block in instrument'
+  activesupport (3.0.0.rc) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (3.0.0.rc) lib/active_support/notifications.rb:52:in `instrument'
+  actionpack (3.0.0.rc) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.0.0.rc) lib/action_controller/metal/rescue.rb:17:in `process_action'
+  actionpack (3.0.0.rc) lib/abstract_controller/base.rb:105:in `process'
+  actionpack (3.0.0.rc) lib/abstract_controller/rendering.rb:40:in `process'
+  actionpack (3.0.0.rc) lib/action_controller/metal.rb:133:in `dispatch'
+  actionpack (3.0.0.rc) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.0.0.rc) lib/action_controller/metal.rb:173:in `block in action'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:62:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:27:in `call'
+  rack-mount (0.6.9) lib/rack/mount/route_set.rb:148:in `block in call'
+  rack-mount (0.6.9) lib/rack/mount/code_generation.rb:89:in `block in recognize'
+  rack-mount (0.6.9) lib/rack/mount/code_generation.rb:66:in `optimized_each'
+  rack-mount (0.6.9) lib/rack/mount/code_generation.rb:88:in `recognize'
+  rack-mount (0.6.9) lib/rack/mount/route_set.rb:139:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:489:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/head.rb:14:in `call'
+  rack (1.2.1) lib/rack/methodoverride.rb:24:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/flash.rb:177:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/cookies.rb:268:in `call'
+  activerecord (3.0.0.rc) lib/active_record/query_cache.rb:32:in `block in call'
+  activerecord (3.0.0.rc) lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  activerecord (3.0.0.rc) lib/active_record/query_cache.rb:12:in `cache'
+  activerecord (3.0.0.rc) lib/active_record/query_cache.rb:31:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:410:in `_run_call_callbacks'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  rack (1.2.1) lib/rack/sendfile.rb:107:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  railties (3.0.0.rc) lib/rails/rack/logger.rb:13:in `call'
+  rack (1.2.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.0.0.rc) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.2.1) lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  rack (1.2.1) lib/rack/lock.rb:11:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/static.rb:30:in `call'
+  railties (3.0.0.rc) lib/rails/application.rb:168:in `call'
+  railties (3.0.0.rc) lib/rails/application.rb:77:in `method_missing'
+  railties (3.0.0.rc) lib/rails/rack/log_tailer.rb:15:in `call'
+  rack (1.2.1) lib/rack/content_length.rb:13:in `call'
+  rack (1.2.1) lib/rack/handler/webrick.rb:52:in `service'
+  /Users/ppvanzella/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/ppvanzella/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/ppvanzella/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-20 01:24:14 -0300
+  Processing by AnalyzeInventoryController#index as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from <class:Product> at /Users/ppvanzella/Code/InventoryControl/app/models/product.rb:10)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from <class:Product> at /Users/ppvanzella/Code/InventoryControl/app/models/product.rb:11)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" INNER JOIN "brands" ON "brands"."id" = "products"."brand_id"[0m
+Completed   in 76ms
+
+NoMethodError (undefined method `ascend_by_name' for []:ActiveRecord::Relation):
+  activerecord (3.0.0.rc) lib/active_record/relation.rb:366:in `method_missing'
+  app/controllers/analyze_inventory_controller.rb:12:in `index'
+  actionpack (3.0.0.rc) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.0.0.rc) lib/abstract_controller/base.rb:136:in `process_action'
+  actionpack (3.0.0.rc) lib/action_controller/metal/rendering.rb:11:in `process_action'
+  actionpack (3.0.0.rc) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:429:in `_run__3018443725314574046__process_action__4484984022360863294__callbacks'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:404:in `_run_process_action_callbacks'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:93:in `run_callbacks'
+  actionpack (3.0.0.rc) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.0.0.rc) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.0.0.rc) lib/active_support/notifications.rb:52:in `block in instrument'
+  activesupport (3.0.0.rc) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+  activesupport (3.0.0.rc) lib/active_support/notifications.rb:52:in `instrument'
+  actionpack (3.0.0.rc) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.0.0.rc) lib/action_controller/metal/rescue.rb:17:in `process_action'
+  actionpack (3.0.0.rc) lib/abstract_controller/base.rb:105:in `process'
+  actionpack (3.0.0.rc) lib/abstract_controller/rendering.rb:40:in `process'
+  actionpack (3.0.0.rc) lib/action_controller/metal.rb:133:in `dispatch'
+  actionpack (3.0.0.rc) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.0.0.rc) lib/action_controller/metal.rb:173:in `block in action'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:62:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:27:in `call'
+  rack-mount (0.6.9) lib/rack/mount/route_set.rb:148:in `block in call'
+  rack-mount (0.6.9) lib/rack/mount/code_generation.rb:89:in `block in recognize'
+  rack-mount (0.6.9) lib/rack/mount/code_generation.rb:66:in `optimized_each'
+  rack-mount (0.6.9) lib/rack/mount/code_generation.rb:88:in `recognize'
+  rack-mount (0.6.9) lib/rack/mount/route_set.rb:139:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/routing/route_set.rb:489:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/head.rb:14:in `call'
+  rack (1.2.1) lib/rack/methodoverride.rb:24:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/flash.rb:177:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/cookies.rb:268:in `call'
+  activerecord (3.0.0.rc) lib/active_record/query_cache.rb:32:in `block in call'
+  activerecord (3.0.0.rc) lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  activerecord (3.0.0.rc) lib/active_record/query_cache.rb:12:in `cache'
+  activerecord (3.0.0.rc) lib/active_record/query_cache.rb:31:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  activesupport (3.0.0.rc) lib/active_support/callbacks.rb:410:in `_run_call_callbacks'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  rack (1.2.1) lib/rack/sendfile.rb:107:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  railties (3.0.0.rc) lib/rails/rack/logger.rb:13:in `call'
+  rack (1.2.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.0.0.rc) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.2.1) lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  rack (1.2.1) lib/rack/lock.rb:11:in `call'
+  actionpack (3.0.0.rc) lib/action_dispatch/middleware/static.rb:30:in `call'
+  railties (3.0.0.rc) lib/rails/application.rb:168:in `call'
+  railties (3.0.0.rc) lib/rails/application.rb:77:in `method_missing'
+  railties (3.0.0.rc) lib/rails/rack/log_tailer.rb:15:in `call'
+  rack (1.2.1) lib/rack/content_length.rb:13:in `call'
+  rack (1.2.1) lib/rack/handler/webrick.rb:52:in `service'
+  /Users/ppvanzella/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/ppvanzella/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/ppvanzella/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
