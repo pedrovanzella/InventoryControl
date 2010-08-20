@@ -8,6 +8,11 @@ gem 'rails', '3.0.0.rc'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'formtastic', :git => "http://github.com/justinfrench/formtastic.git", :branch => "rails3"
 
+group :development, :test do
+  gem 'test-unit'
+  gem 'rspec-rails', ">= 2.0.0.beta.19"
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
