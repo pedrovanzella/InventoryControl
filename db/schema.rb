@@ -37,17 +37,12 @@ ActiveRecord::Schema.define(:version => 20100611143630) do
     t.integer  "stock_minimum"
   end
 
-  add_index "products", ["brand_id"], :name => "index_products_on_brand_id"
-
   create_table "purchase_orders", :force => true do |t|
     t.integer  "product_id"
     t.integer  "purchase_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "purchase_orders", ["product_id"], :name => "index_purchase_orders_on_product_id"
-  add_index "purchase_orders", ["purchase_id"], :name => "index_purchase_orders_on_purchase_id"
 
   create_table "purchases", :force => true do |t|
     t.date     "date"
@@ -62,16 +57,11 @@ ActiveRecord::Schema.define(:version => 20100611143630) do
     t.datetime "updated_at"
   end
 
-  add_index "sale_orders", ["product_id"], :name => "index_sale_orders_on_product_id"
-  add_index "sale_orders", ["sale_id"], :name => "index_sale_orders_on_sale_id"
-
   create_table "sales", :force => true do |t|
     t.integer  "customer_id"
     t.date     "date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "sales", ["customer_id"], :name => "index_sales_on_customer_id"
 
 end

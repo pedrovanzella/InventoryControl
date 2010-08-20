@@ -17,4 +17,4 @@ ActionController::Routing::Routes.draw do |map|
   #map.connect 'special/:action/:id', :controller => 'special'
 end
 
-#ActionController::Routing::Translator.i18n
+ActionController::Routing::Translator.i18n
