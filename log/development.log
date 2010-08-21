@@ -147,3 +147,59 @@ ActionView::Template::Error (undefined method `semantic_form_for' for #<#<Class:
 Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
 Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.7ms)
 Rendered /Users/ppvanzella/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.0.rc/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2010-08-20 21:59:48 -0300
+  Processing by ProductsController#index as HTML
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Rendered products/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 262ms (Views: 40.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2010-08-20 21:59:51 -0300
+  Processing by ProductsController#new as HTML
+  [1m[36mBrand Load (0.3ms)[0m  [1mSELECT "brands".* FROM "brands"[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_products__form_html_erb__2056098599074216278_2154210540_1701871144021478573 at /Users/ppvanzella/Code/InventoryControl/app/views/products/_form.html.erb:1)
+Rendered products/_form.html.erb (197.5ms)
+Rendered products/new.html.erb within layouts/application (203.7ms)
+Completed 200 OK in 345ms (Views: 221.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2010-08-20 22:01:03 -0300
+  Processing by ProductsController#new as HTML
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mBrand Load (0.2ms)[0m  SELECT "brands".* FROM "brands"
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_products__form_html_erb___1929636440916685060_2152972560__464606664450968328 at /Users/ppvanzella/Code/InventoryControl/app/views/products/_form.html.erb:1)
+Rendered products/_form.html.erb (182.6ms)
+Rendered products/new.html.erb within layouts/application (192.2ms)
+Completed 200 OK in 300ms (Views: 196.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2010-08-20 22:01:17 -0300
+  Processing by ProductsController#create as HTML
+  Parameters: {"_snowman"=>"☃", "authenticity_token"=>"C9dFUuO41iCD7bfbD7CqVTmlT5lxqGd00HsJI/xHHo4=", "product"=>{"brand_id"=>"1", "name"=>"a", "bought_price"=>"12", "sale_price"=>"13", "stock_ammount"=>"2"}, "commit"=>"Create Product"}
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "products" ("bought_price", "brand_id", "created_at", "name", "sale_price", "stock_ammount", "updated_at") VALUES (12.0, 1, '2010-08-21 01:01:17.780256', 'a', 13.0, 2, '2010-08-21 01:01:17.780256')[0m
+Redirected to http://0.0.0.0:3000/products/3
+Completed 302 Found in 268ms
+
+
+Started GET "/products/3" for 127.0.0.1 at 2010-08-20 22:01:17 -0300
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE ("products"."id" = 3) LIMIT 1
+Rendered products/show.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 118ms (Views: 34.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2010-08-20 22:01:20 -0300
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Rendered products/index.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 118ms (Views: 43.0ms | ActiveRecord: 0.6ms)
